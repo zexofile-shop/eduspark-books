@@ -1,12 +1,13 @@
 {
-  "latestVersionCode": 13,
-  "latestVersionName": "5.7",
+  "latestVersionCode": 14,
+  "latestVersionName": "5.8",
   "minVersionCode": 0,
-  "apkUrl": "https://github.com/zexofile-shop/eduspark-books/releases/download/app-v5.7/Eduspark_v5.7.apk",
+  "apkUrl": "https://github.com/zexofile-shop/eduspark-books/releases/download/app-v5.8/Eduspark_v5.8.apk",
   "notes": [
-    "Faster player: one tap shows or hides the controls instantly",
-    "Speed and Quality open in a side panel, also in portrait",
-    "Cleaner player icons and seek bar",
-    "Updates now download inside the app"
+    "Maintenance mode and messages from the admin panel",
+    "Books, batches, tests and notices update live from the admin panel",
+    "Notices and sent notifications in the inbox",
+    "Test results and leaderboards",
+    "Faster start with saved content when offline"
   ]
 }
