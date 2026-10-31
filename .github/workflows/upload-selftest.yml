@@ -1,0 +1,104 @@
+name: upload-selftest
+on:
+  push:
+    paths: ['.github/workflows/upload-selftest.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Prepare
+        run: |
+          git clone -q --depth 1 https://github.com/zexofile-shop/media-relay mr
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          ffmpeg -hide_banner -loglevel error -f lavfi -i testsrc2=size=1920x1080:rate=30 -f lavfi -i sine=frequency=440:sample_rate=44100 -t 40 -c:v libx264 -preset veryfast -crf 30 -pix_fmt yuv420p -c:a aac -shortest test.mp4
+          echo Y29uc3QgYz1yZXF1aXJlKCdjcnlwdG8nKSxmcz1yZXF1aXJlKCdmcycpO2ZzLndyaXRlRmlsZVN5bmMoJ2JpZy5wZGYnLEJ1ZmZlci5jb25jYXQoW0J1ZmZlci5mcm9tKCclUERGLTEuN1xuJyksYy5yYW5kb21CeXRlcygyNjAwMDAwMCldKSk7ZnMud3JpdGVGaWxlU3luYygnc21hbGwucGRmJyxCdWZmZXIuY29uY2F0KFtCdWZmZXIuZnJvbSgnJVBERi0xLjRcbicpLGMucmFuZG9tQnl0ZXMoMzAwMDAwKV0pKTs= | base64 -d > gen.js && node gen.js
+          ls -l test.mp4 big.pdf small.pdf
+      - name: Selftest
+        run: |
+          cat > st.b64 <<'B64'
+          CmNvbnN0IGh0dHAgPSByZXF1aXJlKCdodHRwJyk7IGNvbnN0IGZzID0gcmVxdWlyZSgnZnMnKTsgY29uc3QgY3J5cHRvID0gcmVx
+          dWlyZSgnY3J5cHRvJyk7IGNvbnN0IHsgZXhlY1N5bmMgfSA9IHJlcXVpcmUoJ2NoaWxkX3Byb2Nlc3MnKTsKY29uc3QgeyBVcGxv
+          YWRTZXJ2aWNlLCBoYW5kbGVVcGxvYWQgfSA9IHJlcXVpcmUoJy4vbXIvc3JjL3VwbG9hZCcpOwpjb25zdCBSRVBPID0gcHJvY2Vz
+          cy5lbnYuR0lUSFVCX1JFUE9TSVRPUlksIFRBRyA9ICd1cGxvYWQtc2VsZnRlc3QnOwpjb25zdCBzbGVlcCA9IG1zID0+IG5ldyBQ
+          cm9taXNlKHIgPT4gc2V0VGltZW91dChyLCBtcykpOwpjb25zdCB1cGxvYWRzID0gbmV3IFVwbG9hZFNlcnZpY2UoeyB0b2tlbjog
+          cHJvY2Vzcy5lbnYuR0hfVE9LRU4sIHJlcG86IFJFUE8sIHBkZlRhZzogVEFHLCB2aWRlb1RhZzogVEFHLCBxdWFsaXR5V29ya2Zs
+          b3c6ICd2aWRlby1xdWFsaXRpZXMueW1sJywgb3duZXJFbWFpbDogJ2NpQGV4YW1wbGUuY29tJywgY2h1bmtTaXplOiA0ICogMTAy
+          NCAqIDEwMjQsIGxvZzogY29uc29sZSB9KTsKY29uc3QgYXV0aCA9IHsgdmVyaWZ5VXNlcjogYXN5bmMgdCA9PiAodCA9PT0gJ1Qn
+          ID8geyB1aWQ6ICdjaScsIGVtYWlsOiAnY2lAZXhhbXBsZS5jb20nLCBlbWFpbFZlcmlmaWVkOiB0cnVlIH0gOiBudWxsKSB9Owpj
+          b25zdCBzZW5kID0gKHJlcywgc3RhdHVzLCBib2R5LCBoZWFkZXJzID0ge30pID0+IHsgY29uc3QgZCA9IEpTT04uc3RyaW5naWZ5
+          KGJvZHkpOyByZXMud3JpdGVIZWFkKHN0YXR1cywgeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nLCAnQ29udGVu
+          dC1MZW5ndGgnOiBCdWZmZXIuYnl0ZUxlbmd0aChkKSwgLi4uaGVhZGVycyB9KTsgcmVzLmVuZChkKTsgfTsKY29uc3Qgc2VydmVy
+          ID0gaHR0cC5jcmVhdGVTZXJ2ZXIoKHJlcSwgcmVzKSA9PiBoYW5kbGVVcGxvYWQocmVxLCByZXMsIG5ldyBVUkwocmVxLnVybCwg
+          J2h0dHA6Ly9sJyksIHsgdXBsb2FkcywgYXV0aCwgYWRtaW5PcmlnaW5zOiBbXSwgc2VuZCwgbG9nOiBjb25zb2xlIH0pKTsKZnVu
+          Y3Rpb24gY2FsbChtZXRob2QsIHAsIGJvZHksIGhlYWRlcnMgPSB7fSkgewogIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwg
+          cmVqZWN0KSA9PiB7CiAgICBjb25zdCBkYXRhID0gYm9keSA9PT0gdW5kZWZpbmVkID8gbnVsbCA6IEJ1ZmZlci5pc0J1ZmZlcihi
+          b2R5KSA/IGJvZHkgOiBCdWZmZXIuZnJvbShKU09OLnN0cmluZ2lmeShib2R5KSk7CiAgICBjb25zdCByZXEgPSBodHRwLnJlcXVl
+          c3QoeyBob3N0OiAnMTI3LjAuMC4xJywgcG9ydDogc2VydmVyLmFkZHJlc3MoKS5wb3J0LCBwYXRoOiBwLCBtZXRob2QsIGhlYWRl
+          cnM6IHsgQXV0aG9yaXphdGlvbjogJ0JlYXJlciBUJywgLi4uKGRhdGEgPyB7ICdDb250ZW50LUxlbmd0aCc6IGRhdGEubGVuZ3Ro
+          IH0gOiB7fSksIC4uLmhlYWRlcnMgfSB9LCByZXMgPT4gewogICAgICBjb25zdCBiID0gW107IHJlcy5vbignZGF0YScsIGQgPT4g
+          Yi5wdXNoKGQpKTsgcmVzLm9uKCdlbmQnLCAoKSA9PiB7IGxldCBqID0gbnVsbDsgdHJ5IHsgaiA9IEpTT04ucGFyc2UoQnVmZmVy
+          LmNvbmNhdChiKSk7IH0gY2F0Y2ggKF8pIHt9IHJlc29sdmUoeyBzdGF0dXM6IHJlcy5zdGF0dXNDb2RlLCBqc29uOiBqIH0pOyB9
+          KTsKICAgIH0pOwogICAgcmVxLm9uKCdlcnJvcicsIHJlamVjdCk7IGlmIChkYXRhKSByZXEud3JpdGUoZGF0YSk7IHJlcS5lbmQo
+          KTsKICB9KTsKfQphc3luYyBmdW5jdGlvbiB1cChmaWxlLCBraW5kLCBuYW1lLCB0eXBlLCB7IHBhdXNlQWZ0ZXIgPSAtMSwgcGF1
+          c2VNcyA9IDAsIGNhbmNlbEFmdGVyID0gLTEgfSA9IHt9KSB7CiAgY29uc3QgYnVmID0gZnMucmVhZEZpbGVTeW5jKGZpbGUpOyBj
+          b25zdCB0MCA9IERhdGUubm93KCk7CiAgY29uc3Qgc3QgPSBhd2FpdCBjYWxsKCdQT1NUJywgJy9hcGkvdXBsb2FkL3N0YXJ0Jywg
+          eyBraW5kLCBuYW1lLCBzaXplOiBidWYubGVuZ3RoLCB0eXBlIH0sIHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29u
+          JyB9KTsKICBpZiAoc3Quc3RhdHVzICE9PSAyMDApIHJldHVybiB7IG5hbWUsIHN0YXJ0OiBzdCB9OwogIGxldCBvZmYgPSAwLCBp
+          ID0gMCwgbGFzdDsKICB3aGlsZSAob2ZmIDwgYnVmLmxlbmd0aCkgewogICAgaWYgKGkgPT09IGNhbmNlbEFmdGVyKSB7IGNvbnN0
+          IGMgPSBhd2FpdCBjYWxsKCdERUxFVEUnLCBgL2FwaS91cGxvYWQvc2Vzc2lvbj9pZD0ke3N0Lmpzb24uaWR9YCk7IHJldHVybiB7
+          IG5hbWU6IHN0Lmpzb24ubmFtZSwgY2FuY2VsbGVkOiBjIH07IH0KICAgIGxhc3QgPSBhd2FpdCBjYWxsKCdQVVQnLCBgL2FwaS91
+          cGxvYWQvY2h1bms/aWQ9JHtzdC5qc29uLmlkfSZvZmZzZXQ9JHtvZmZ9YCwgYnVmLnN1YmFycmF5KG9mZiwgb2ZmICsgNCAqIDEw
+          MjQgKiAxMDI0KSk7CiAgICBpZiAobGFzdC5zdGF0dXMgIT09IDIwMCkgcmV0dXJuIHsgbmFtZTogc3QuanNvbi5uYW1lLCBmYWls
+          ZWRBdDogb2ZmLCBsYXN0LCBzZWNzOiAoRGF0ZS5ub3coKSAtIHQwKSAvIDEwMDAgfTsKICAgIG9mZiA9IGxhc3QuanNvbi5kb25l
+          ID8gYnVmLmxlbmd0aCA6IGxhc3QuanNvbi5yZWNlaXZlZDsKICAgIGlmIChpID09PSBwYXVzZUFmdGVyKSBhd2FpdCBzbGVlcChw
+          YXVzZU1zKTsKICAgIGkrKzsKICB9CiAgY29uc3Qgb3V0ID0geyBuYW1lOiBzdC5qc29uLm5hbWUsIHNpemU6IGJ1Zi5sZW5ndGgs
+          IHVybDogbGFzdC5qc29uLnVybCwgc2VjczogKERhdGUubm93KCkgLSB0MCkgLyAxMDAwLCBwYXVzZWRNczogcGF1c2VBZnRlciA+
+          PSAwID8gcGF1c2VNcyA6IDAgfTsKICB0cnkgewogICAgZXhlY1N5bmMoYGN1cmwgLXNTTCAtbyBkbC5iaW4gIiR7b3V0LnVybH0i
+          YCk7CiAgICBvdXQuc2hhTWF0Y2ggPSBjcnlwdG8uY3JlYXRlSGFzaCgnc2hhMjU2JykudXBkYXRlKGZzLnJlYWRGaWxlU3luYygn
+          ZGwuYmluJykpLmRpZ2VzdCgnaGV4JykgPT09IGNyeXB0by5jcmVhdGVIYXNoKCdzaGEyNTYnKS51cGRhdGUoYnVmKS5kaWdlc3Qo
+          J2hleCcpOwogIH0gY2F0Y2ggKGUpIHsgb3V0LmRvd25sb2FkRXJyb3IgPSBTdHJpbmcoZS5tZXNzYWdlKS5zbGljZSgwLCAyMDAp
+          OyB9CiAgcmV0dXJuIG91dDsKfQooYXN5bmMgKCkgPT4gewogIGF3YWl0IG5ldyBQcm9taXNlKHIgPT4gc2VydmVyLmxpc3Rlbigw
+          LCAnMTI3LjAuMC4xJywgcikpOwogIGNvbnN0IFIgPSB7IGF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkgfTsKICBSLnZpZGVv
+          ID0gYXdhaXQgdXAoJ3Rlc3QubXA0JywgJ3ZpZGVvJywgJ3NlbGZ0ZXN0IHZpZGVvLm1wNCcsICd2aWRlby9tcDQnKTsKICBjb25z
+          dCBbcDQ1LCBwMTUwXSA9IGF3YWl0IFByb21pc2UuYWxsKFsKICAgIHVwKCdiaWcucGRmJywgJ3BkZicsICdwYXVzZTQ1LnBkZics
+          ICdhcHBsaWNhdGlvbi9wZGYnLCB7IHBhdXNlQWZ0ZXI6IDEsIHBhdXNlTXM6IDQ1MDAwIH0pLAogICAgdXAoJ2JpZy5wZGYnLCAn
+          cGRmJywgJ3BhdXNlMTUwLnBkZicsICdhcHBsaWNhdGlvbi9wZGYnLCB7IHBhdXNlQWZ0ZXI6IDEsIHBhdXNlTXM6IDE1MDAwMCB9
+          KSwKICBdKTsKICBSLnBhdXNlNDUgPSBwNDU7IFIucGF1c2UxNTAgPSBwMTUwOwogIFIuZHVwMSA9IGF3YWl0IHVwKCdzbWFsbC5w
+          ZGYnLCAncGRmJywgJ2R1cC5wZGYnLCAnYXBwbGljYXRpb24vcGRmJyk7CiAgUi5kdXAyID0gYXdhaXQgdXAoJ3NtYWxsLnBkZics
+          ICdwZGYnLCAnZHVwLnBkZicsICdhcHBsaWNhdGlvbi9wZGYnKTsKICBSLm5vdFBkZiA9IGF3YWl0IHVwKCd0ZXN0Lm1wNCcsICdw
+          ZGYnLCAnZmFrZS5wZGYnLCAnYXBwbGljYXRpb24vcGRmJyk7CiAgUi5jYW5jZWwgPSBhd2FpdCB1cCgnYmlnLnBkZicsICdwZGYn
+          LCAnY2FuY2VsLnBkZicsICdhcHBsaWNhdGlvbi9wZGYnLCB7IGNhbmNlbEFmdGVyOiAyIH0pOwogIGF3YWl0IHNsZWVwKDYwMDAp
+          OwogIGNvbnN0IHJpZCA9IGF3YWl0IHVwbG9hZHMuZ2gucmVsZWFzZUlkKFRBRyk7CiAgUi5hc3NldHNBZnRlciA9IChhd2FpdCB1
+          cGxvYWRzLmdoLmFzc2V0cyhyaWQpKS5tYXAoYSA9PiAoeyBuYW1lOiBhLm5hbWUsIHN0YXRlOiBhLnN0YXRlLCBzaXplOiBhLnNp
+          emUsIHR5cGU6IGEuY29udGVudF90eXBlIH0pKTsKICBpZiAoUi52aWRlby51cmwpIHsKICAgIFIucmFuZ2UgPSBleGVjU3luYyhg
+          Y3VybCAtcyAtRCAtIC1vIC9kZXYvbnVsbCAtTCAtciAxMDAwLTE5OTkgIiR7Ui52aWRlby51cmx9IiB8IGdyZXAgLWlFICJeKEhU
+          VFB8bG9jYXRpb258Y29udGVudC1yYW5nZXxjb250ZW50LWxlbmd0aHxhY2NlcHQtcmFuZ2VzfGNvbnRlbnQtdHlwZSkiIHwgc2Vk
+          IC1FICdzLyhsb2NhdGlvbjogW14/XSopXFw/LiovXFwxPy4uLi9JJ2ApLnRvU3RyaW5nKCk7CiAgICBSLnJhbmdlVGFpbCA9IGV4
+          ZWNTeW5jKGBjdXJsIC1zIC1vIC9kZXYvbnVsbCAtdyAiJXtodHRwX2NvZGV9ICV7c2l6ZV9kb3dubG9hZH0iIC1MIC1yIC01MDAg
+          IiR7Ui52aWRlby51cmx9ImApLnRvU3RyaW5nKCk7CiAgICBSLnEgPSBhd2FpdCBjYWxsKCdQT1NUJywgJy9hcGkvdXBsb2FkL3F1
+          YWxpdGllcycsIHsgbmFtZTogUi52aWRlby5uYW1lIH0sIHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9KTsK
+          ICAgIGZvciAobGV0IGkgPSAwOyBpIDwgNDA7IGkrKykgewogICAgICBhd2FpdCBzbGVlcCgyMDAwMCk7CiAgICAgIGNvbnN0IHMg
+          PSBhd2FpdCBjYWxsKCdHRVQnLCBgL2FwaS91cGxvYWQvcXVhbGl0aWVzP25hbWU9JHtlbmNvZGVVUklDb21wb25lbnQoUi52aWRl
+          by5uYW1lKX1gKTsKICAgICAgUi5xU3RhdHVzID0gczsKICAgICAgaWYgKHMuanNvbiAmJiBbJ3JlYWR5JywgJ2ZhaWxlZCcsICdw
+          YXJ0aWFsJ10uaW5jbHVkZXMocy5qc29uLnN0YXR1cykpIGJyZWFrOwogICAgfQogIH0KICBmcy53cml0ZUZpbGVTeW5jKCdyZXN1
+          bHRzLmpzb24nLCBKU09OLnN0cmluZ2lmeShSLCBudWxsLCAyKSk7CiAgY29uc29sZS5sb2coSlNPTi5zdHJpbmdpZnkoUiwgbnVs
+          bCwgMikpOwogIHNlcnZlci5jbG9zZSgpOyBwcm9jZXNzLmV4aXQoMCk7Cn0pKCkuY2F0Y2goZSA9PiB7IGNvbnNvbGUuZXJyb3Io
+          ZSk7IGZzLndyaXRlRmlsZVN5bmMoJ3Jlc3VsdHMuanNvbicsIEpTT04uc3RyaW5naWZ5KHsgY3Jhc2g6IFN0cmluZyhlLnN0YWNr
+          KSB9KSk7IHByb2Nlc3MuZXhpdCgwKTsgfSk7Cg==
+          B64
+          base64 -d st.b64 > selftest.js
+          node selftest.js
+      - name: Publish results
+        if: always()
+        run: |
+          gh release view upload-selftest -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create upload-selftest -R "$GITHUB_REPOSITORY" -t upload-selftest -n "temporary"
+          gh release upload upload-selftest results.json -R "$GITHUB_REPOSITORY" --clobber
