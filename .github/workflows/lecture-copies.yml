@@ -7,6 +7,9 @@ name: lecture-copies
 on:
   schedule:
     - cron: '*/10 * * * *'
+  push:
+    branches: [main]
+    paths: ['.github/lecture-copies-run']
   workflow_dispatch:
     inputs:
       store:
@@ -30,6 +33,7 @@ jobs:
         env:
           STORE: ${{ inputs.store || 'quality' }}
         run: |
+          if [ "${{ github.event_name }}" = "push" ]; then STORE=$(curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/.github/lecture-copies-run" | tr -dc 'a-z' | head -c 21); fi
           [[ "$STORE" =~ ^q[a-z]{1,20}$ ]] || { echo "bad store"; exit 1; }
           export ENDPOINT="https://eduspark-$STORE.sites.tab.bot"
           curl -fsSL -o copies.py "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/.github/scripts/lecture_copies.py"
