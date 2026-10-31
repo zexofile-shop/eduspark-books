@@ -1,0 +1,12 @@
+{
+  "latestVersionCode": 13,
+  "latestVersionName": "5.7",
+  "minVersionCode": 0,
+  "apkUrl": "https://github.com/zexofile-shop/eduspark-books/releases/download/app-v5.7/Eduspark_v5.7.apk",
+  "notes": [
+    "Faster player: one tap shows or hides the controls instantly",
+    "Speed and Quality open in a side panel, also in portrait",
+    "Cleaner player icons and seek bar",
+    "Updates now download inside the app"
+  ]
+}
