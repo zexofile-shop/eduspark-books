@@ -1,0 +1,35 @@
+name: lecture-copies
+# Makes the 720p / 480p / 360p copies of lecture videos uploaded from the Eduspark admin panel.
+# The videos live in the Eduspark video store (eduspark-quality.sites.tab.bot). Every 10 minutes this asks the store
+# for a waiting lecture; the store checks GitHub's own signed token for this workflow (no secret is kept anywhere),
+# hands over the 1080p link, and takes back the copies at <name>-720p.mp4, <name>-480p.mp4, <name>-360p.mp4.
+# When nothing is waiting, the run ends in a few seconds. Public repo: Actions minutes are free.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      endpoint:
+        description: Video store address (leave as is)
+        required: false
+        default: https://eduspark-quality.sites.tab.bot
+permissions:
+  id-token: write
+  contents: read
+concurrency:
+  group: lecture-copies
+  cancel-in-progress: false
+jobs:
+  copies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Tools
+        run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Make copies
+        env:
+          ENDPOINT: ${{ inputs.endpoint }}
+        run: |
+          [[ -z "$ENDPOINT" || "$ENDPOINT" =~ ^https://eduspark-q[a-z]*\.sites\.tab\.bot$ ]] || { echo "bad endpoint"; exit 1; }
+          curl -fsSL -o copies.py "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/.github/scripts/lecture_copies.py"
+          python3 copies.py
