@@ -9,10 +9,10 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
-      endpoint:
-        description: Video store address (leave as is)
+      store:
+        description: Video store (leave as quality)
         required: false
-        default: https://eduspark-quality.sites.tab.bot
+        default: quality
 permissions:
   id-token: write
   contents: read
@@ -28,8 +28,9 @@ jobs:
         run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Make copies
         env:
-          ENDPOINT: ${{ inputs.endpoint }}
+          STORE: ${{ inputs.store || 'quality' }}
         run: |
-          [[ -z "$ENDPOINT" || "$ENDPOINT" =~ ^https://eduspark-q[a-z]*\.sites\.tab\.bot$ ]] || { echo "bad endpoint"; exit 1; }
+          [[ "$STORE" =~ ^q[a-z]{1,20}$ ]] || { echo "bad store"; exit 1; }
+          export ENDPOINT="https://eduspark-$STORE.sites.tab.bot"
           curl -fsSL -o copies.py "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/.github/scripts/lecture_copies.py"
           python3 copies.py
