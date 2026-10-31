@@ -1,0 +1,34 @@
+name: app-release-v510
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v510.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_APK: 875a729b4414e78e3074ace9eab1c6f870ef93a8a52c435be3fc6d96e16e9eb7
+      SHA_AAB: 9a51758f1501435868f23317a307e61786d9b765056870224899fcfe512dc149
+    steps:
+      - name: Fetch files
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.10.apk "$SRC/Eduspark_v5.10_rel.apk"
+          curl -fL --retry 5 -o Eduspark_v5.10_play.aab "$SRC/Eduspark_v5.10_rel_play.aab"
+          echo "$SHA_APK  Eduspark_v5.10.apk" | sha256sum -c -
+          echo "$SHA_AAB  Eduspark_v5.10_play.aab" | sha256sum -c -
+      - name: Create release
+        run: |
+          gh release create app-v5.10 Eduspark_v5.10.apk Eduspark_v5.10_play.aab --title "Eduspark app v5.10" --notes "Eduspark 5.10: XP for watching lectures, reading books/notes and finishing tests; daily streak with an evening reminder; daily XP claim in Profile; weekly and all-time Leaderboard. Includes everything from 5.9." --target main --latest=false
+      - name: Verify download
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o check.apk "https://github.com/${GH_REPO}/releases/download/app-v5.10/Eduspark_v5.10.apk"
+          curl -fL --retry 5 -o check.aab "https://github.com/${GH_REPO}/releases/download/app-v5.10/Eduspark_v5.10_play.aab"
+          echo "$SHA_APK  check.apk" | sha256sum -c -
+          echo "$SHA_AAB  check.aab" | sha256sum -c -
