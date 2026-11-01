@@ -1,0 +1,34 @@
+name: app-release-v514
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v514.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_APK: 4e30789021559cc251b5f6f9ef3a186d2ce2aad1c36819ff5355be430268f3f6
+      SHA_AAB: d2cfebaa5733bd0170a9354bcaf303c666ad2614c4a18e9ae79ef26beb5f8bda
+    steps:
+      - name: Fetch files
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.14.apk "$SRC/Eduspark_v5.14_rel.apk"
+          curl -fL --retry 5 -o Eduspark_v5.14_play.aab "$SRC/Eduspark_v5.14_rel_play.aab"
+          echo "$SHA_APK  Eduspark_v5.14.apk" | sha256sum -c -
+          echo "$SHA_AAB  Eduspark_v5.14_play.aab" | sha256sum -c -
+      - name: Create release
+        run: |
+          gh release create app-v5.14 Eduspark_v5.14.apk Eduspark_v5.14_play.aab --title "Eduspark app v5.14" --notes "Eduspark 5.14: Back keeps your place everywhere; lectures remember where you stopped (Continue watching / Start over, watched bar, Home row); everything personal follows your Google account (photo, Continue reading, lecture spots, test attempts, joined batches) and syncs across phones; new accounts must fill name, class and school; blocked screen shows full details; batch Community chat with rules, report, hide user and slow mode; How to earn XP page that follows the panel live; search hint lists books, lectures, tests." --target main --latest=false
+      - name: Verify download
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o check.apk "https://github.com/${GH_REPO}/releases/download/app-v5.14/Eduspark_v5.14.apk"
+          curl -fL --retry 5 -o check.aab "https://github.com/${GH_REPO}/releases/download/app-v5.14/Eduspark_v5.14_play.aab"
+          echo "$SHA_APK  check.apk" | sha256sum -c -
+          echo "$SHA_AAB  check.aab" | sha256sum -c -
