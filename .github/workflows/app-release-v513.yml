@@ -1,0 +1,34 @@
+name: app-release-v513
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v513.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_APK: d975ac16a0e3d6a420a61153700fc879c441a2be048a77ba1d28080ed29e34c1
+      SHA_AAB: 8b13307c8334d87004462a8dd53491280aed3a07f30124eeacad9008e187ae6e
+    steps:
+      - name: Fetch files
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.13.apk "$SRC/Eduspark_v5.13_rel.apk"
+          curl -fL --retry 5 -o Eduspark_v5.13_play.aab "$SRC/Eduspark_v5.13_rel_play.aab"
+          echo "$SHA_APK  Eduspark_v5.13.apk" | sha256sum -c -
+          echo "$SHA_AAB  Eduspark_v5.13_play.aab" | sha256sum -c -
+      - name: Create release
+        run: |
+          gh release create app-v5.13 Eduspark_v5.13.apk Eduspark_v5.13_play.aab --title "Eduspark app v5.13" --notes "Eduspark 5.13: instant block (blocked accounts are stopped within a second, signed out, downloads removed; clear blocked screen with Copy details + Contact support), universal search (books, batches, subjects, lectures, tests), lectures and tests need sign-in, new Profile footer, co-founder Shivam Kumar's support email." --target main --latest=false
+      - name: Verify download
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o check.apk "https://github.com/${GH_REPO}/releases/download/app-v5.13/Eduspark_v5.13.apk"
+          curl -fL --retry 5 -o check.aab "https://github.com/${GH_REPO}/releases/download/app-v5.13/Eduspark_v5.13_play.aab"
+          echo "$SHA_APK  check.apk" | sha256sum -c -
+          echo "$SHA_AAB  check.aab" | sha256sum -c -
