@@ -1,0 +1,59 @@
+name: app-reissue-v517d
+on:
+  push:
+    paths:
+      - ".github/workflows/app-reissue-v517d.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      TAG: app-v5.17
+      SRC: https://eduspark-quality.sites.tab.bot/play
+    steps:
+      - name: Fetch new files and check sha256
+        run: |
+          mkdir new && cd new
+          curl -fL --retry 5 -o "Eduspark_v5.17.apk" "$SRC/Eduspark_v5.17f_rel.apk"
+          curl -fL --retry 5 -o "Eduspark_v5.17_play.aab" "$SRC/Eduspark_v5.17f_rel_play.aab"
+          curl -fL --retry 5 -o "Eduspark_v5.17_PlayStore.zip" "$SRC/Eduspark_v5.17f_PlayStore.zip"
+          echo "154937fdbdb3c2b2915ad7323f384da096ca37bad74f71beb50b29d45108da02  Eduspark_v5.17.apk" >> ../sums.txt
+          echo "e42fddf6300add1c15bd9a3a394e482da5eac23c05b5b199e361ced7e3b82a40  Eduspark_v5.17_play.aab" >> ../sums.txt
+          echo "e67f7efd7e2ad601a7c0fc25623d4bcba35b648b6d54f0235c92306a59a82369  Eduspark_v5.17_PlayStore.zip" >> ../sums.txt
+          sha256sum -c ../sums.txt
+        shell: bash
+      - name: Upload under temporary names
+        run: |
+          cd new
+          for f in *; do cp "$f" "tmp_$f"; done
+          gh release upload "$TAG" tmp_* --clobber
+      - name: Download temporary assets back and verify
+        run: |
+          mkdir chk && cd chk
+          sleep 10
+          while read -r sum name; do
+            curl -fL --retry 5 -o "$name" "https://github.com/${GH_REPO}/releases/download/${TAG}/tmp_${name}"
+            echo "$sum  $name" | sha256sum -c -
+          done < ../sums.txt
+      - name: Swap (delete old, rename temporary)
+        run: |
+          while read -r sum name; do
+            OLD=$(gh api "repos/${GH_REPO}/releases/tags/${TAG}" --jq ".assets[] | select(.name==\"${name}\") | .id")
+            NEW=$(gh api "repos/${GH_REPO}/releases/tags/${TAG}" --jq ".assets[] | select(.name==\"tmp_${name}\") | .id")
+            test -n "$NEW"
+            if [ -n "$OLD" ]; then gh api -X DELETE "repos/${GH_REPO}/releases/assets/${OLD}"; fi
+            gh api -X PATCH "repos/${GH_REPO}/releases/assets/${NEW}" -f name="${name}" --jq .name
+          done < sums.txt
+      - name: Verify final URLs
+        run: |
+          mkdir fin && cd fin
+          sleep 10
+          while read -r sum name; do
+            curl -fL --retry 5 -o "$name" "https://github.com/${GH_REPO}/releases/download/${TAG}/${name}"
+            echo "$sum  $name" | sha256sum -c -
+          done < ../sums.txt
+          gh api "repos/${GH_REPO}/releases/tags/${TAG}" --jq '.assets[] | .name + " " + (.size|tostring)'
