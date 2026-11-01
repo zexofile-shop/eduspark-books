@@ -1,0 +1,34 @@
+name: app-release-v517-zips
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v517-zips.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  zips:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_ZIP: ea3fe1b491455de31da441388a97e4b626a817fb8a876a7c8e1e4bb9c7b19cd0
+      SHA_LEGAL: 154f2da706670645d4644948d689f802626bab2f3c233989c3cf2003f7d3c6de
+    steps:
+      - name: Fetch
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.17_PlayStore.zip "$SRC/Eduspark_v5.17_PlayStore.zip"
+          curl -fL --retry 5 -o Eduspark_legal_pages.zip "$SRC/Eduspark_legal_pages.zip"
+          echo "$SHA_ZIP  Eduspark_v5.17_PlayStore.zip" | sha256sum -c -
+          echo "$SHA_LEGAL  Eduspark_legal_pages.zip" | sha256sum -c -
+      - name: Upload to release
+        run: |
+          gh release upload app-v5.17 Eduspark_v5.17_PlayStore.zip Eduspark_legal_pages.zip
+      - name: Verify
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o c1.zip "https://github.com/${GH_REPO}/releases/download/app-v5.17/Eduspark_v5.17_PlayStore.zip"
+          curl -fL --retry 5 -o c2.zip "https://github.com/${GH_REPO}/releases/download/app-v5.17/Eduspark_legal_pages.zip"
+          echo "$SHA_ZIP  c1.zip" | sha256sum -c -
+          echo "$SHA_LEGAL  c2.zip" | sha256sum -c -
