@@ -1,0 +1,34 @@
+name: app-release-v515
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v515.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_APK: 4f1959ada5ca45b6b8c5e0da3e988c2a21b15c2a44924c3add4435f8bec9feb3
+      SHA_AAB: 8954cb33b7aabaefb26b21c51e6815519b2ef3a2bac25c282179420c0ad74eef
+    steps:
+      - name: Fetch files
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.15.apk "$SRC/Eduspark_v5.15_rel.apk"
+          curl -fL --retry 5 -o Eduspark_v5.15_play.aab "$SRC/Eduspark_v5.15_rel_play.aab"
+          echo "$SHA_APK  Eduspark_v5.15.apk" | sha256sum -c -
+          echo "$SHA_AAB  Eduspark_v5.15_play.aab" | sha256sum -c -
+      - name: Create release
+        run: |
+          gh release create app-v5.15 Eduspark_v5.15.apk Eduspark_v5.15_play.aab --title "Eduspark app v5.15" --notes "Eduspark 5.15: lectures get Like, Comments (same safety rules as chat) and Share, plus Up next below the player; batch cover images (16:9) on Home and the batch page; batch chat gets reactions, Seen by, typing indicator, swipe to reply and notifications with pop-up and sound; books open faster on slow or blocked networks (download mirrors race, shorter timeouts); Save downloaded books to the phone's Downloads; cleaner Home header and Profile." --target main --latest=false
+      - name: Verify download
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o check.apk "https://github.com/${GH_REPO}/releases/download/app-v5.15/Eduspark_v5.15.apk"
+          curl -fL --retry 5 -o check.aab "https://github.com/${GH_REPO}/releases/download/app-v5.15/Eduspark_v5.15_play.aab"
+          echo "$SHA_APK  check.apk" | sha256sum -c -
+          echo "$SHA_AAB  check.aab" | sha256sum -c -
