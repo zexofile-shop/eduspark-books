@@ -1,0 +1,34 @@
+name: app-release-v516b
+on:
+  push:
+    paths:
+      - ".github/workflows/app-release-v516b.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      SRC: https://eduspark-quality.sites.tab.bot/play
+      SHA_APK: 23f71862286af72f248fab560667eb0d6976d2865cd78c4928e5c7f6e7b1528e
+      SHA_AAB: 83a043916774ebb0d17c10a8cb699e50dd72c8ebd3dffcc8a58540c073ac7985
+    steps:
+      - name: Fetch files
+        run: |
+          curl -fL --retry 5 -o Eduspark_v5.16.apk "$SRC/Eduspark_v5.16b_rel.apk"
+          curl -fL --retry 5 -o Eduspark_v5.16_play.aab "$SRC/Eduspark_v5.16b_rel_play.aab"
+          echo "$SHA_APK  Eduspark_v5.16.apk" | sha256sum -c -
+          echo "$SHA_AAB  Eduspark_v5.16_play.aab" | sha256sum -c -
+      - name: Replace release assets
+        run: |
+          gh release upload app-v5.16 Eduspark_v5.16.apk Eduspark_v5.16_play.aab --clobber
+      - name: Verify download
+        run: |
+          sleep 10
+          curl -fL --retry 5 -o check.apk "https://github.com/${GH_REPO}/releases/download/app-v5.16/Eduspark_v5.16.apk"
+          curl -fL --retry 5 -o check.aab "https://github.com/${GH_REPO}/releases/download/app-v5.16/Eduspark_v5.16_play.aab"
+          echo "$SHA_APK  check.apk" | sha256sum -c -
+          echo "$SHA_AAB  check.aab" | sha256sum -c -
