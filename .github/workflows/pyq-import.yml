@@ -1,0 +1,42 @@
+name: pyq-import
+run-name: pyq import ${{ inputs.manifest || github.event.head_commit.message }}
+# Copies official previous-year papers (CBSE / boards / exam bodies) onto release assets of this repo.
+# A manifest (pyq-import/*.json, a list of {tag, name, src, member, title}) is pushed or named by hand; for each
+# entry the source (a direct PDF, or a member of a .zip / .rar, "a.zip::b.pdf" for a zip inside a zip) is
+# downloaded here, checked to be a PDF, its document info set to the given title, and uploaded to release <tag> as
+# <name>. Entries whose asset already exists are skipped. A report lands in pyq-import/results/<manifest>.
+on:
+  push:
+    branches: [main]
+    paths: ['pyq-import/*.json']
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: Manifest path (pyq-import/xxx.json)
+        required: true
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MANIFEST: ${{ inputs.manifest }}
+      BEFORE: ${{ github.event.before }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libarchive-tools poppler-utils unar >/dev/null
+          pip install -q pikepdf
+      - name: Import
+        run: |
+          if [ -z "$MANIFEST" ]; then
+            MANIFEST=$(git diff --name-only "$BEFORE" "$GITHUB_SHA" -- 'pyq-import/*.json' 2>/dev/null | tr '\n' ' ')
+            [ -z "$MANIFEST" ] && MANIFEST=$(git show --name-only --format= "$GITHUB_SHA" -- 'pyq-import/*.json' | tr '\n' ' ')
+          fi
+          echo "manifests: $MANIFEST"
+          for m in $MANIFEST; do [ -f "$m" ] && python3 .github/scripts/pyq_import.py "$m"; done
