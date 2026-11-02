@@ -50,10 +50,12 @@ jobs:
               try:
                   if u not in cache:
                       fn = 'src_%d.pdf' % len(cache)
-                      for attempt in range(4):
-                          r = run('curl', '-fsSL', '--retry', '3', '-m', '300', '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36', '-o', fn, u, check=False)
-                          if r.returncode == 0 and open(fn, 'rb').read(5) == b'%PDF-': break
-                          time.sleep(5 * (attempt + 1))
+                      for attempt in range(3):
+                          cmd = ['curl', '-fsSL', '--retry', '2', '--connect-timeout', '20', '-m', '150', '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36', '-o', fn]
+                          if it.get('referer'): cmd += ['-e', it['referer']]
+                          r = run(*(cmd + [u]), check=False)
+                          if r.returncode == 0 and os.path.exists(fn) and open(fn, 'rb').read(5) == b'%PDF-': break
+                          time.sleep(4 * (attempt + 1))
                       else:
                           raise RuntimeError('download failed: ' + r.stderr[-300:])
                       cache[u] = fn
@@ -61,6 +63,10 @@ jobs:
                   out = name
                   if it.get('pages'):
                       run('qpdf', '--empty', '--pages', fn, it['pages'], '--', out)
+                  elif it.get('clean'):
+                      # new file holding only the page objects: no document info / XMP metadata from the source site
+                      r = run('qpdf', '--empty', '--pages', fn, it.get('keep', '1-z'), '--', out, check=False)
+                      if r.returncode not in (0, 3): raise RuntimeError('qpdf: ' + r.stderr[-200:])
                   else:
                       run('cp', fn, out)
                   if open(out, 'rb').read(5) != b'%PDF-': raise RuntimeError('not a pdf')
