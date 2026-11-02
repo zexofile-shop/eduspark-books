@@ -1,0 +1,326 @@
+[
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/Mathematics%20Theory%20%28Std%29.zip",
+  "member": "30-1-1 Mathematics Theory (Std).pdf",
+  "title": "CBSE Class 10 Maths 2020 Question Paper (Set 30/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/MATHEMATICS_STANDARD_X.zip",
+  "member": "MATHEMATICS_STANDARD_X/MATHS_(041)_SET_30_1_1,2,3_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Maths 2020 Marking Scheme (Set 30/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-basic-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/Mathematics%20%28Basic%29.zip",
+  "member": "430-1-1_Mathematics_(Basic).pdf",
+  "title": "CBSE Class 10 Maths Basic 2020 Question Paper (Set 430/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-basic-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/MATHEMATICS_BASIC_CLASS_X.zip",
+  "member": "MATHEMATICS_BASIC_CLASS_X/MATHS BASIC_(241 )_SET_430_1_1,2,3_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Maths Basic 2020 Marking Scheme (Set 430/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-science-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/Science.zip",
+  "member": "31-1-1_Science.pdf",
+  "title": "CBSE Class 10 Science 2020 Question Paper (Set 31/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-science-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/SCIENCE%20%28ENGLISH_VERSION%29.zip",
+  "member": "SCIENCE (ENGLISH_VERSION)/SET_31_1_1,2,3/SCIENCE_(086)_SET_31_1_1_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Science 2020 Marking Scheme (Set 31/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-social-science-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/Social%20Science.zip",
+  "member": "32-1-1_Social Science.pdf",
+  "title": "CBSE Class 10 Social Science 2020 Question Paper (Set 32/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-social-science-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/SOCIAL_SCIENCE_%28ENGLISH_VERSION%29.zip",
+  "member": "SOCIAL_SCIENCE_(ENGLISH_VERSION)/SOCIAL SCIENCE_(087 )_SET_32_1_1_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Social Science 2020 Marking Scheme (Set 32/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-english-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/%28English%20L%26L%29.zip",
+  "member": "2-1-1 (English L&L).pdf",
+  "title": "CBSE Class 10 English 2020 Question Paper (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-english-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/ENGLISH%20LANG%20%26%20LIT.zip",
+  "member": "ENGLISH LANG & LIT/ENGLISH_LANG_&_LIT_SET 2_1_1,2,3/ENGLISH_LANGUAGE_AND_LITERATURE_(184)_SET_2_1_1_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 English 2020 Marking Scheme (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-a-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/HINDI%20A.zip",
+  "member": "3-1-1 HINDI A.pdf",
+  "title": "CBSE Class 10 Hindi A 2020 Question Paper (Set 3/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-a-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/HINDI_A_%26_B.zip",
+  "member": "HINDI_A_&_B/HINDI_A/HINDI_A_(002)_SET_3_1_1,2,3_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Hindi A 2020 Marking Scheme (Set 3/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-b-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/HINDI-B.zip",
+  "member": "4-1-1 HINDI-B.pdf",
+  "title": "CBSE Class 10 Hindi B 2020 Question Paper (Set 4/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-b-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/HINDI_A_%26_B.zip",
+  "member": "HINDI_A_&_B/HINDI_B/HINDI_B_(085)_SET_4_1_1,2,3_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Hindi B 2020 Marking Scheme (Set 4/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-sanskrit-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/X/Sanskrit.zip",
+  "member": "52_JBB Sanskrit.pdf",
+  "title": "CBSE Class 10 Sanskrit 2020 Question Paper",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-sanskrit-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/X/SANSKRIT.zip",
+  "member": "SANSKRIT/SANSKRIT_(122)_SET_52_1_SERIES_JBB_1_CLASS_X_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 10 Sanskrit 2020 Marking Scheme",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physics-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Physics.zip",
+  "member": "55-1-1 Physics.pdf",
+  "title": "CBSE Class 12 Physics 2020 Question Paper (Set 55/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physics-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/PHYSICS.zip",
+  "member": "PHYSICS/SET_55_1_1,2,3/PHYSICS_(042)_55_1_1_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Physics 2020 Marking Scheme (Set 55/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-chemistry-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Chemistry.zip",
+  "member": "56-1-1 Chemistry.pdf",
+  "title": "CBSE Class 12 Chemistry 2020 Question Paper (Set 56/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-chemistry-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/CHEMISTRY.zip",
+  "member": "CHEMISTRY/CHEMISTRY_(043)_SET_56_1_1,2,3_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Chemistry 2020 Marking Scheme (Set 56/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-maths-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Mathematics.zip",
+  "member": "65-1-1 Mathematics.pdf",
+  "title": "CBSE Class 12 Maths 2020 Question Paper (Set 65/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-maths-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/MATHEMATICS.zip",
+  "member": "MATHEMATICS/MATHS _(041 )_SET_65_1_1,2,3_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Maths 2020 Marking Scheme (Set 65/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-biology-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Biology.zip",
+  "member": "57-1-1 Biology.pdf",
+  "title": "CBSE Class 12 Biology 2020 Question Paper (Set 57/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-biology-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/BIOLOGY.zip",
+  "member": "BIOLOGY/BIOLOGY_(044)_SET_57_1_1,2,3_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Biology 2020 Marking Scheme (Set 57/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-english-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/English%20Core.zip",
+  "member": "1-1-1 English Core.pdf",
+  "title": "CBSE Class 12 English 2020 Question Paper (Set 1/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-english-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/ENGLISH_CORE.zip",
+  "member": "ENGLISH_CORE/ENGLISH_CORE_SET_1/ENGLISH_CORE_(301)_SET_1_1_1_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 English 2020 Marking Scheme (Set 1/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-accountancy-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Accountancy.zip",
+  "member": "67-1-1 Accountancy.pdf",
+  "title": "CBSE Class 12 Accountancy 2020 Question Paper (Set 67/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-accountancy-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/ACCOUNTANCY.zip",
+  "member": "ACCOUNTANCY/ACCOUNTANCY_(055)_SET_67_1_1,2,3_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Accountancy 2020 Marking Scheme (Set 67/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-economics-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Economics.zip",
+  "member": "58-1-1 Economics.pdf",
+  "title": "CBSE Class 12 Economics 2020 Question Paper (Set 58/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-economics-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/ECONOMICS_ENGLISH_VERSION.zip",
+  "member": "ECONOMICS_ENGLISH_VERSION/ECONOMICS_(030)_SET_58_1_1_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Economics 2020 Marking Scheme (Set 58/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-history-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/History.zip",
+  "member": "61-1-1 History.pdf",
+  "title": "CBSE Class 12 History 2020 Question Paper (Set 61/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-history-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/HISTORY_ENGLISH_VERSION.zip",
+  "member": "HISTORY_ENGLISH_VERSION/HISTORY_SET_61_1_1,2,3/HISTORY_(027)_SET_61_1_1_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 History 2020 Marking Scheme (Set 61/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-political-science-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Political%20Science.zip",
+  "member": "59-1-1 Political Science.pdf",
+  "title": "CBSE Class 12 Political Science 2020 Question Paper (Set 59/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-political-science-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/POLITICAL_SCIENCE_ENGLISH_VERSION.zip",
+  "member": "POLITICAL_SCIENCE_ENGLISH_VERSION/SET_59_1/POLITICAL_SCIENCE_(028)_SET_59_1_1_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Political Science 2020 Marking Scheme (Set 59/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physical-education-2020.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/Physical%20Education%20%28Theory%29.pdf",
+  "member": null,
+  "title": "CBSE Class 12 Physical Education 2020 Question Paper",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physical-education-2020-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/marking-scheme/2020/XII/PHYSICAL%20EDUCATION.zip",
+  "member": "PHYSICAL EDUCATION/PHYSICAL_EDUCATION_(048)_HMJ_CLASS_XII_MARKING_SCHEME_2020.pdf",
+  "title": "CBSE Class 12 Physical Education 2020 Marking Scheme",
+  "author": "CBSE"
+ }
+]
