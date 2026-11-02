@@ -1,5 +1,649 @@
 [
  {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JtjEkzkImShICBnOqaLx",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/english-113-set-a-2026/1221992",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/LycxWWfjq6Tw8r03xgXl",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/hindi-mt-101-set-a-2026/1221985",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-maths-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NdVAVx2cDd4ptU0jIaNO",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/mathematics-110-set-d-2026/1222015",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/tFgIbAOFNKCzsUsgd8fT",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/sanskrit-sil-105-set-a-2026/1221975",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/DXb3geILoPhBZpXrcFw7",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/science-112-set-a-2026/1222009",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/eRGOqovgQbRmylJzKsJh",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2026/social-science-111-set-a-2026/1222000",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-biology-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/XvEpLlzkQXFFGOvW0EQf",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/biology-119-set-b-2026/1222078",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/rbDadWpPfFLQygq4g9RH",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/chemistry-118-set-a-2026/1222089",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wDwI7vzRv235hwZXGDVO",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/english-105-124-205-223-set-a-2026/1222053",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-geography-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/nrfEIhgcTFAydvicIva1",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/geography-323-set-a-2026/1222073",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/3BPegA8lkcIuixDo5NZ4",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/hindi-106-125-206-224-set-a-2026/1222042",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-history-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/x5spBdsdAEcdYgBePtxM",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/history-321-set-b-2026/1222070",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-maths-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dCwc4JuG5ji5cMTJuGkZ",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/mathematics-121-327-set-a-2026/1222097",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QY5s6mb4WiTnLdStTz9z",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/physics-117-set-a-2026/1222064",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-political-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/GxmxiSrFG0dUOTynWTG6",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2026/political-science-322-set-b-2026/1222056",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NX24kCeJqbD14YEweOvm",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/english-113-set-e-2025/1175820",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PBJcGsC4s5FoqIsRuMY3",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/hindi-mt-101-set-c-2025/1175816",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/FQggewxI2qIwdCVFV2xa",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/mathematics-110-set-b-2025/1175838",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/9h7aGjWmIgYgFRCLiN7l",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/sanskrit-sil-105-set-b-2025/1175810",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NCveYjwJ1Dh8kXWyM2sm",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/science-112-set-d-2025/1175832",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/xg7fAiolSS86R2vh02Lj",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2025/social-science-111-set-b-2025/1175827",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-accountancy-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/8HTF16eHZkyUCTO7IOwS",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/accountancy-220-set-j-2025/1175880",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-biology-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/6mNnwUY1h7tMtPfHPIzq",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/biology-119-set-f-2025/1175881",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-business-studies-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/OWI5dmUw0vyCieUnCf24",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/business-studies-217-set-i-2025/1175879",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/oU4zYVEuu2IFBfpggz78",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/chemistry-118-set-h-2025/1175883",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-economics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Sv4NQoCs8lbh8eoqp6Xw",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/economics-219-set-j-2025/1175877",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JrIRHCTUAE0hBjnFXaEZ",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/english-105-124-205-223-set-d-2025/1175863",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-geography-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PkjLEpZF9HwnRbPeVwpo",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/geography-323-set-g-2025/1175875",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/2aexOBtytZKIbc4Ku9OE",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/hindi-106-125-206-224-set-b-2025/1175859",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-history-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aL0gWOwo09Sp5GXWDxsW",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/history-321-set-a-2025/1175864",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wEJQhBTdNvwvqhj5zxvT",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/mathematics-121-327-set-a-2025/1175887",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/W7LlaqlbFrTodmMyYzPF",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/physics-117-set-d-2025/1175885",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-political-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/R6ZI6XxU8Besx3Indkhb",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2025/political-science-322-set-g-2025/1175874",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/3ApRcWaZXOw1AbYCUNRM",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/english-113-set-b-2024/1103018",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/xgPMTk8big7CG7jDhISe",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/hindi-mt-101-set-e-2024/1103016",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-maths-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/w4PCzf76OmiGVLUBqOSD",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/mathematics-110-set-j-2024/1103023",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zChMNl03x2mc0SyHT8vc",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/sanskrit-sil-205-set-e-2024/1103014",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/g2V9B8pdFZC6HT4bNSFj",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/science-212-set-g-2024/1103022",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kBIrvlSsxpWvT5eYwmOF",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2024/social-science-111-set-a-2024/1103020",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-biology-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/XQV30zIqvdkqf6Z1ho9F",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/biology-119-set-f-2024/1103045",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-business-studies-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/EsTqJYT1gPgGQ6Ytvgpg",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/business-studies-217-set-b-2024/1103041",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/g65LTRROEwJqJoO6rDxK",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/chemistry-118-set-d-2024/1103049",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kt0F0KgXXVSeplC8jn5K",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/english-105-set-e-2024/1103030",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-geography-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/BYFdKbErzOjvkyEdglVw",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/geography-323-set-c-2024/1103038",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/K85bTfe2zCKUe441qzA5",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/106-125-206-224-set-d-2024/1103027",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-maths-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dETAZNNxmVkwIFujpFWo",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/mathematics-elective-121-327-set-j-2024/1103053",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-political-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/KspOchl5GtGYMqhtjtYU",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2024/political-science-322-set-d-2024/1103037",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Cv6VPLVpQJ0Jz7sZ2tPK",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2023/chemistry-118-set-f-2023/1046362",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-maths-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JdJzpdxXt7pnWcULJExM",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2023/mathematics-121-327-set-e-2023/1046368",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VNQtyXDyGJZCJzTPbKDN",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2023/physics-117-set-a-2023/1046355",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/C5VGSVHkoG95VDCPv8dv",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2022/english-213-c-2022/965153",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VoeNibz1kJdsH96WDFaR",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2022/hindi-mt-201-c-2022/965154",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/85wmBwrQIt56HqnZWcoz",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2022/sanskrit-sil-205-j-2022/965152",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/93NZ3hBcWOoCtaMbIy9h",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2022/chemistry-118-e-2022/965156",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/APBhMKVIHO5ZGZjF3WgH",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2022/english-105-124-205-223-e-2022/965155",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/C1EKY0AiI1tupTkWUI80",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2022/physics-117-i-2022/965157",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-biology-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Ce24ryVju0CbkG36g7Zs",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/biology-119-e-2021/433676",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-business-studies-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/83e0zXaZ5paallajsStq",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/business-studies-217-i-2021/433672",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/LEAGk4mIEA9P8QuvxAqB",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/chemistry-118-a-2021/433679",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ERFUQxAR02dpYD7GTdVz",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/english-compulsory-105-205-j-2021/433664",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/655vbOhA6qMjp3hS7Ivj",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/hindi-compulsory-106-206-b-2021/433669",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-history-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/DMXoPM1coALQgfb1Xv1A",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/history-321-e-2021/433671",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-maths-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/2wZ5cAYIpr4RyaO3jeY5",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/mathematics-121-327-i-2021/433684",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/jB8bQ39UYdj41Evemd8a",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/physics-117-a-2021/433682",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/uRRN01yybh4WLVDz7fx0",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/english-213-d-2020/433734",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4Y2rfvcuOrYQwTKMBW8n",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/hindi-101-f-2020/433733",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-maths-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/XaSauxprTxRk1aUTStmV",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/mathematics-110-g-2020/433746",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/cv8pBVwUMvFVmRH7AREj",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/sanskrit-105-i-2020/433736",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kciW8EeeiSGBrTMczYy4",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/science-112-c-2020/433743",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/WUIWo8f7BmTUW3LYAehP",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2020/social-science-111-h-2020/433739",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HQpkrM3r9QYwsWcDskvr",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2019/english-213-f-2019/433749",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/huErT0BBoEjjMrM5V3MW",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2019/hindi-101-b-2019/433747",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/jeDVFYuXsMsuWzd3EVtT",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2019/sanskrit-sil-105-c-2019/433750",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/gcov906W1Sjoj8cZvmoS",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2019/social-science-111-e-2019/433755",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/CtI4Z9CEfezZK1DC65u1",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2019/english-102-202-f-2019/433690",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/vHKLavToqBrgwdEYr83f",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2019/hindi-101-201-b-2019/433686",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kDtsvkST7DFPYv9lahJQ",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2019/physics-117-a-2019/433696",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-english-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Okmz8BHTfV510VU889JI",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2018/english-213-2018/433764",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/bQIeqiJoSX4iE4WoIJ4Z",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2018/hindi-sil-206-2018/433762",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-maths-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZsVuRCR6Q5v4Ay2H0gux",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2018/mathematics-210-2018/433770",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-chemistry-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/U1mcNaiXYpycpN8lJTT5",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2018/chemistry-118-2018/433705",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-english-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/8aOyZuVoQ5LVzkIDfiWV",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2018/english-105-205-2018/433700",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-hindi-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HRcRZcDo0ZpkwRBeMZr1",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2018/hindi-101-201-2018/433699",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-12",
+  "name": "pyq-bseb-12-physics-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/v4Yxc1L2tuqwkPhQh1mQ",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-12th/2018/physics-117-2018/433707",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aY7VIRLPb6bdt3V43Eij",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2017/hindi-211-2017/433782",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/K6DfkFLWBXJlWOtjjxfJ",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2017/sanskrit-sil-222-2017/433786",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/TH0KZhU0xyQ9r3Lr6YC4",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2017/science-204-scb-2017/433793",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aw8L33ZRe8BXLv1pLsQO",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2017/social-science-203-2017/433789",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-hindi-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/lIvr1HpyeFAFzMta3gW5",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2016/hindi-801-2016/433808",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-sanskrit-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7cvtj5Zjr82bYLUEqFuU",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2016/sanskrit-805-2016/433806",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-science-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Wx4NnAtqdVEHZOzUyk5P",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2016/science-p1-2016/433815",
+  "clean": true
+ },
+ {
+  "tag": "pyq-bseb-10",
+  "name": "pyq-bseb-10-social-science-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZZziZPz6ID98C76b9hh7",
+  "referer": "https://www.selfstudys.com/books/bihar/state-books/class-10th/2016/social-science-p1-2016/433812",
+  "clean": true
+ },
+ {
   "tag": "pyq-up-10",
   "name": "pyq-up-10-english-2026.pdf",
   "src": "https://www.selfstudys.com/sitepdfs/zCP4ledmVP2WmXbxKmEW",
@@ -18,6 +662,1497 @@
   "name": "pyq-up-10-maths-2026.pdf",
   "src": "https://www.selfstudys.com/sitepdfs/EvDTbpTupN899WPXTaFl",
   "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2026/mathematics-822-fv-2026/1223549",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/MoQ1hxyNQ3zfiYMyVNZN",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2026/sanskrit-818-fp-2026/1223505",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7ViM2wgcWLUsquvUDKfd",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2026/science-824-gj-2026/1223542",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/yuMw4Mx0rd5TzTuI0Zd6",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2026/social-science-825-gq-2026/1223535",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-accountancy-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zNmJdAEysYtz61uBOb2u",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/accountancy-349-mh-2026/1223609",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7rkurUo1dCWWk9ljkicS",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/biology-348-eg-2026/1223624",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-business-studies-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wg3Res1TCpBHvuuQvD4H",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/business-studies-350-mi-2026/1223617",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/V13cbDpNJlV49ptIPSKP",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/chemistry-347-dz-2026/1223616",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-economics-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aTB7Ns3mYL8Ymk28BaJl",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/economics-329-dg-2026/1223610",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7s3UmrtYhMLx5QcSViNi",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/english-316-bv-2026/1223604",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-geography-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/C6oFZVyY7SAG3kbs2rSe",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/geography-322-cn-2026/1223608",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/s9ugyrYR3X79CWiNIklB",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/hindi-301-ba-2026/1223597",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-history-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HTw6AYI3xcCRdllyKbVp",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/history-321-cg-2026/1223606",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QtSmQj9bJdj5uLiPkmkb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/mathematics-324-cx-2026/1223639",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/A4796wtpEgTCqgNroZKQ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/physics-346-ds-2026/1223633",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/z17ohKzfjuV26ewIaYuz",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2026/nagrik-shastra-323-cv-2026/1223586",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wk1CtIIokndFYZ3jioMb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/english-817-bh-2025/1175335",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aHZfS2O8vxgqXig1yAMI",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/hindi-801-ba-2025/1175324",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QGmM0WXochXhQ3ZERXil",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/mathematics-822-bv-2025/1175359",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7N0fYv5EfF1tJZgScsnM",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/sanskrit-818-bp-2025/1175316",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VRC0ZqHwgtjIviriDrSU",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/science-824-cj-2025/1175352",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dat7XD9vBcVDTwOaGsGm",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2025/social-science-825-bas-2025/1175344",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-accountancy-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Nt1Fsb9XCekD3A9w8ro5",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/accountancy-349-2025/1175470",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/luWHsnOkGLyBZjMHXHai",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/biology-348-kh-2025/1175476",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-business-studies-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/SUH9nUPVhSILXYuL1U3T",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/business-studies-350-2025/1175469",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/mSLrP4TPc33MZpvknsNW",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/chemistry-347-jz-2025/1175486",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-economics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NydsGXKP4oCNPcCiNp3A",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/economics-329-jf-2025/1175468",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/e0XTAZKlzqy7K5Yoed46",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/english-316-hv-2025/1175452",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-geography-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/f6svJ0EdiVAJGR71InaF",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/geography-322-ik-2025/1175460",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-history-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/qLcRy4g7Miv4qgTmbBov",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/history-321-if-2025/1175463",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/UZsQ6J7W1TnSfcHjPe1q",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/mathematics-324-ix-2025/1175506",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/IIEJKpsvZY7YKckWQnWA",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2025/physics-346-js-2025/1175497",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QaFj7DAmb4v0mt5U02R3",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/english-817-hh-2024/1103127",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/19xshqeplewTdG5TAaKQ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/801-hb-2024/1103119",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/0mlYllNhB2h8pZjiylIs",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/mathematics-822-hy-2024/1103146",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/AonXWHf30gcgalCPHwGK",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/818-hq-2024/1103110",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/TK84bgOkAjrQQJB77z9B",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/science-824-ik-2024/1103141",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/y8Dx49uJ5cQdMEqwdIA8",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2024/social-science-825-ix-2024/1103133",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-accountancy-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hUeuGHQq9ZsotsxdnqXK",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/accountancy-349-2024/1103199",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aiTpcRvZEXBiaGRmZpTh",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/biology-348-gh-2024/1103211",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-business-studies-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/p3e5fI5lXr0Ytg56fe9v",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/business-studies-350-2024/1103193",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/3pqYJKPld2QEbDy9AHfQ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/chemistry-347-gb-2024/1103203",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-economics-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QLJnoyMVzZDrksiwTYc2",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/economics-329-fg-2024/1103198",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/W1t9mzuDhsMeZQLovekc",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/english-316-dv-2024/1103182",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-geography-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HIFj4EYo9itVc8DM7de6",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/geography-322-el-2024/1103191",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aIRt9sAWUr8wPGXppBqb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/301-da-2024/1103175",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-history-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZYjwOJEU9lyLtRm3yfrW",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/history-321-ed-2024/1103194",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/WZI69s0N3WQ6y2zpjIrU",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/mathematics-324-fa-2024/1103222",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/OMsYU90QWAYNSe93Po4i",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/physics-346-fs-2024/1103218",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VFsN8QLCaR7M1w5TwYzZ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2024/civics-323-er-2024/1103186",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/3MfH0MBatRNZQ2MNzXvn",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2023/english-817-di-2023/1043583",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/YM988Pxpx4wF9DNEgrUy",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2023/mathematics-822-dv-2023/1043604",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/KMBkagi8p9jodEHGvJ3x",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2023/sanskrit-818-dt-2023/1043571",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Ny7whi1PdUWoha9gUyIS",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2023/science-824-ej-2023/1043597",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/LCezgQW2DyDKoTZKHKBP",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2023/social-science-825-ex-2023/1043589",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-accountancy-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/tM9MAx0fG9npaGl4dAuI",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/accountancy-349-2023/1043556",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/jPdq8xrCazqG7eURrC8t",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/biology-348-cg-2023/1043527",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-business-studies-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/xbbScX8n7zTWzysWdoUq",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/business-studies-350-2023/1043547",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/S8TOvICOgWyzjtM9QTEq",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/chemistry-347-bz-2023/1043520",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-economics-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kprVBXTpxnNTuDslsUGh",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/economics-329-bg-2023/1043553",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/k1C0VlVa9PVY3mwMzLaj",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/english-316-aa-2023/1043498",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-geography-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QLiD6LXp2QAiHLkql72U",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/geography-322-ak-2023/1043513",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QnzQA70crnrEaeYrFnpy",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/hindi-301-zb-2023/1043489",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-history-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/J7lvygGqAbKrVxniVlQO",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/history-321-ad-2023/1043502",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hPPna1fK8kYvycACD4QV",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/mathematics-324-ax-2023/1043552",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JLV7wJiTosiV6TJyyObl",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/physics-346-bs-2023/1043541",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/bTZwDIjeS10RxHCvMPOb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2023/nagrik-shastra-323-ar-2023/1043476",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/TU7RrrNgwxSBNbXQS3lQ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/english-817-aj-2022/966266",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ogj0rqkQWCGydBNdzoXA",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/hindi-801-aa-2022/966262",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7XDNH0QqGDJA0GQfmEU7",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/mathematics-822-ay-2022/966277",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/doNSvhdlLyCfHZNMjRpE",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/sanskrit-818-ar-2022/966254",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VqT2fuyAXl6lU33EuGbE",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/science-824-bl-2022/966273",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/r21oIAhPS9J2AnZsx99L",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2022/social-science-825-bz-2022/966267",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ErpzfqTxBXVM75fILVCR",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/biology-348-go-2022/966230",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/gHIdBtshMkGe5tGQr83A",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/chemistry-347-gh-2022/966236",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/iukz4aFfmFeSjimegBVA",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/english-316-ef-2022/966221",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-geography-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/TkebAgJ0TSNafL1ZDWGC",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/geography-322-eu-2022/966227",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VBaU9pQYUQ4Sw3PlvyHw",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/hindi-301-dl-2022/966216",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZlY3RBckgAvJFz2LTDlx",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/mathematics-324-ff-2022/966241",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4RuKEPf05riG3t2N5vxQ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/physics-346-gc-2022/966226",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/FKBwTv8BRcQWKhfHRjaV",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2022/nagrik-shastra-323-fb-2022/966209",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/yFBB3Ib1NBcA7KHrUuqi",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2021/english-817-gv-2021/966245",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/SYL0geUwU14CRqXwUu0u",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2021/hindi-801-go-2021/966244",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QWQzbpa4fDK5jJHJnMDC",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2021/science-824-hx-2021/966247",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/cOrSi4pNxPpTbHHS9VmJ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2021/social-science-825-il-2021/966246",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/bUuPh51EwEsbnvbgtEli",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2021/hindi-general-302-dj-2021/966189",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2021.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/GRbJHrhX4wpFXNcFmSMb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2021/mathematics-324-ez-2021/966197",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/q67mTfkvDtH400uOJezM",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/english-817-mh-2020/436640",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Z0GbB1AXwSvRxAfJQ25H",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/hindi-801-ma-2020/436633",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dossDTNiAu3CfX7SXUBz",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/mathematics-822-mv-2020/436667",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hVUl8GjALl2V1d9U7jkO",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/sanskrit-818-mo-2020/436626",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/6i6pSYHgH3leRK3bUUJ0",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/science-824-nj-2020/436660",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/WEJbcLaXGwFZ0F7H5YjX",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2020/social-science-825-nx-2020/436653",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4fyPf5CknIcmFG79MKki",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/biology-2020-348-wk/436269",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/btfQcC3kWPF9c5Hme774",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/chemistry-2020-347-wa/436274",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-economics-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/OjKrc3UiAT79hqrUVDa7",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/economics-2020-329-xf/436266",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hCLDiqci7iDJG65o2IH5",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/english-2020-316-ya/436259",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/SYWWnQsbWzErHpbmAIxF",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/hindi-2020-301-zf/436254",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NpLmd6Ob6a616CpC01y1",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/maths-2020-324-xb/436286",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/cE5LrAIt5nBzYPwxj9YA",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/physics-2020-346-xs/436280",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2020.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/v1cB4EC4nT6UmibtO9YH",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2020/nagrik-shastra-2020-323-yv/436262",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/djAMepz2IpmYeOT9AOP3",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/english-817-ah-2019/436700",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QoJ8mMGIdkTmLBGZbvi9",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/hindi-801-aa-2019/436695",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ap39LE63IgiinuNyaOqN",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/mathematics-822-av-2019/436720",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/D2rIrlroBg0LuoAZad5A",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/sanskrit-818-au-2019/436690",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NlwusmErY7ZDt1vxxmA0",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/science-824-bj-2019/436713",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/1cwwSqU3qaFei0qUKXJA",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2019/social-science-825-bq-2019/436709",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-accountancy-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wcZucsCjw5cE2TU0YnGd",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/book-keeping-accountancy-2019-349/436296",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/tNNbyVvelOSLc4l0xXi2",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/biology-2019-348-fr/436300",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4eLEQX7MPbYcDNkA4C64",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/chemistry-2019-347-fk/436304",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hSOPqWV9rm3Auj3QYkXE",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/english-2019-316-dg/436292",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/gALbxJ1ie9o6jJZ6tm6v",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/hindi-2019-301-cq/436289",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QdD5Ez7fSKbyqOjNiB9Q",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/maths-2019-324-ej/436310",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/NsHWW9QKU4VYlzjkMVCe",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/physics-2019-346-fh/436305",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zHp0EFnzjHQe2OydiQtm",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2019/nagrik-shastra-2019-323-ee/436297",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HFTt9YANcAnugnJClE0s",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/english-817-hj-2018/436737",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/O2aPJpuE3KK68UcL5Gzg",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/hindi-801-ab-2018/436731",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/UHrsw4iUyw9MDQqYwKnC",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/mathematics-822-ia-2018/436750",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-sanskrit-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/tqmiOClCOuFENQncrQFT",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/sanskrit-818-hv-2018/436722",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/gWBmtt2vBtpqv6IypIUf",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/science-824-bl-2018/436748",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/RpgvN6rj2oSTfCczK4o5",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2018/social-science-825-jf-2018/436742",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Brs9LUB9psNSikkUpH90",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/biology-2018-376-go/436335",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/FgPPC6zOPHg6oV4hT6y5",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/chemistry-2018-374-fz/436347",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/efSCiGXRWAxbqlANZjeP",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/english-2018-322-bt/436328",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/iKRnS9YRUMC7FT3zErf5",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/hindi-2018-304-ap/436317",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/V53nKHWILiB3HOVlQ0vp",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/maths-2018-334-du/436365",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2018.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/orr4CvRBhWztmECSve0t",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2018/physics-2018-372-fk/436357",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/LGtB3ms4m5YFqT3GQugR",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2017/english-817-ai-2017/436758",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zJTO26Jr8yYabDoz2KVG",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2017/hindi-801-ac-2017/436755",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/DHH9fFcpGFH4gsFVj4cY",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2017/mathematics-822-bb-2017/436762",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/KYxza79sqJynGyqKXJfi",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2017/science-824-bu-2017/436761",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kDO8FFoULsWsdKzqmWNc",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2017/social-science-825-cf-2017/436760",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PcJCH1f07LbYaFur3OSm",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/biology-2017-377-si/436377",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aFJiuTV4XmjVwJ1NcImU",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/chemistry-2017-374-rn/436379",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/H7IHgY6mzXQQzEqrIVcy",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/english-2017-323-oa/436370",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PFli10ub5FiwXhQtjAkC",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/hindi-2017-304-mr/436367",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-history-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Mt6r8u3DkoXh35g5EaUB",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/itihas-2017-328-ok/436374",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/Joze3P2zhgkFOFt9irOw",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/maths-2017-set-1/58022",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/K51Sy2TBOANG4RQ4BLZF",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/physics-2017-set-1/58038",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JfybWzbrMtHaq3izzTGk",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2017/civics-2017-332-pm/436376",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-english-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ErxJ7NdQzPA2Ll1rrsEB",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2016/english-817-cl-2016/436767",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-hindi-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/DPjZVglYKu9WTWQvk5K6",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2016/hindi-801-ca-2016/436766",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-maths-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/jTYhO3KKj8yCFj69ZnEJ",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2016/mathematics-822-cz-2016/436772",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-science-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/xhYeE2sDkhK5uvLjrwKK",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2016/science-824-dt-2016/436771",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-10",
+  "name": "pyq-up-10-social-science-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZWQ5zrz76zMj7PqiMBHb",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-10th/2016/social-science-825-es-2016/436770",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-biology-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4zfKBOZuajm9Agw8oVCR",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/biology-2016-376-ys/436391",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-chemistry-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/EMYwJoCtePSt2tec4MLx",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/chemistry-2016-set-1/57931",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-english-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/L8mzYgiJevpMacTkiyJ8",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/english-2016-set-1/57929",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-hindi-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dQLf5XWi469oFukaufBC",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/hindi-general-2016-304-sp/436381",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-maths-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dJGIM65eyLgPjVsZVdpw",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/maths-2016-334-vu/436402",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-physics-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/GIvlqxMgsPqFEgUzf1Dc",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/physics-2016-set-1/57925",
+  "clean": true
+ },
+ {
+  "tag": "pyq-up-12",
+  "name": "pyq-up-12-political-science-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/JCbqILA2p5H2rcyXiyLH",
+  "referer": "https://www.selfstudys.com/books/up/state-books/class-12th/2016/naagrik-shastra-2016-332-vh/436383",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-english-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/3Oq6Hk6RyJ7ojnDNIrm6",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2026/english-3006-2026/1222431",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/sObU8JfFeUHbclnEeFNn",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2026/mathematics-3007-2026/1222436",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-sanskrit-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/mqN7hpFv0JoSsitPegTI",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2026/sanskrit-3004-2026/1222429",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7RAMJ7v6rOrURrPFL6xi",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2026/science-3003-2026/1222434",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-social-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zkSSYoO5F4Z81e57ocKW",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2026/social-science-3005-2026/1222435",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-accountancy-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/zNjbV0OxyfGwaoG4bYHe",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/accountancy-1745-2026/1222495",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-biology-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hM5q61EBJM0kes5FKLY3",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/biology-optional-1947-2026/1222486",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-business-studies-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/YDRCYJNEiJGwaiEn9oZq",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/business-studies-1948-2026/1222483",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-chemistry-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/fZ1dDsVLEfmrfWkAPy7n",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/chemistry-2256-2026/1222482",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-economics-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/J6z1CayEk97OYtspy9nc",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/economics-1540-2026/1222478",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-english-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/nv57h4A2BjGGSNM9kwza",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/english-a-core-1101-2026/1222475",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-geography-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/0aU17H5bEQVaDIG7Igpy",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/geography-2052-2026/1222489",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-hindi-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/CT4akAU2LkfiF0ThvE44",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/hindi-1307-2026/1222473",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-history-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/yR55Lg8NAqROwZun3dKD",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/history-optional-2357-2026/1222490",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-maths-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/mgWdtf0Cf2X6vJfGChIw",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/mathematics-optional-1642-2026/1222494",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-physics-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PPB9fHQtLRcN5o3qldwR",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/physics-1846-2026/1222493",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-political-science-2026.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QeKOWg5QuUoWxJajIa5D",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2026/political-science-2458-2026/1222491",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-hindi-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/jicAyflmZENHUUsMuyW4",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2025/hindi-a-2431-2025/1176592",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/BZDwX1CTGIHtmCoeAE9I",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2025/mathematics-030525-jan-2025/1176594",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-science-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/I7s0Y0bEXvzKufHtcpC5",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2025/science-2434-2025/1176593",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-accountancy-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/OFhdlmk894NjYw0dAej2",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/accountancy-9764-2025/1176620",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-biology-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/0pNCyM0C03ZTU2WthZoE",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/biology-9966-2025/1176621",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-chemistry-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/MjbNx2dhTq1SwfdoxQqY",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/chemistry-10275-2025/1176622",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-economics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QQHoPADYqjndtphGZSH3",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/economics-9559-2025/1176618",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-english-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/US1VawZc7MZfulwyyYEp",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/english-9325-2025/1176609",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-geography-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/bpDzt8Jp7pwa6a2YG9jH",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/geography-10071-2025/1176616",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-hindi-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/4m1MCKOE2WAxr8PUEbws",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/hindi-9326-2025/1176606",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-history-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/PpKxMHdhuOm4wTb5lIeX",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/history-030525-jan-2025/1176615",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-maths-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/f0TwGQtmO5PALyf7SXFX",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/mathematics-9661-2025/1176625",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-physics-2025.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/KKtMlcSvdvzdKAa2dglD",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2025/physics-9865-2025/1176624",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-accountancy-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/y3jQiVZrKuyoTTLtlOXu",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/accountancy-49080-2024/1103753",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-biology-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/7Tvyjd6A8Nd6ulGGnzm8",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/biology-51082-2024/1103756",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-business-studies-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/nzKj5ldaeeqHV3uNN61n",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/business-studies-52086-2024/1103751",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-chemistry-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/w1RnTSPhAtGbNiwpE5SC",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/chemistry-55091-2024/1103755",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-economics-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dpxDmx76IeKa7xuP7oRX",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/economics-46074-2024/1103752",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-english-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/xyHVibpM5yEiyOvPJOtw",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/english-a-core-43020-2024/1103743",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-geography-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/SOuocxIZNlgNXdkxDcuS",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/geography-optional-47076-2024/1103745",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-hindi-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/hwJPm0RM1tksuLRLSCij",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/45056-2024/1103741",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-history-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/KmTISFILtHAIDPdt0Ap9",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/history-48078-2024/1103749",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-maths-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/IFR5V7T8r6TryBJTzUuq",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/mathematics-53088-2024/1103759",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-physics-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/HqfGKE6FzRAyp5bJcFWp",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/physics-49079-2024/1103758",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-political-science-2024.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/J9NDRheuBhWPkx8WTZXl",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2024/political-science-56094-2024/1103748",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-biology-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/2ngSGRDhuwlWRJV3OGPy",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/biology-11084-2023/1043303",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-chemistry-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/VZNcrIOYjz8QJJ3CI5x7",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/chemistry-14090-2023/1043301",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-economics-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/WXeBkSUnxARqKLX37N5c",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/economics-6075-2023/1043305",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-english-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/TXcYid1GKKdAwWuoEpMH",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/english-a-core-3037-2023/1043296",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-geography-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/ZdtaGscC3QmpCysmgmKU",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/geography-13089-2023/1043299",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-history-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/kl0KYKNT7P600wS1pI76",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/history-7077-2023/1043298",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-maths-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/6BoYaTA2KSeMejDh2XNz",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/mathematics-12087-2023/1043308",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-12",
+  "name": "pyq-jac-12-physics-2023.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/XK0H2IqBY8rAIeBfFfpS",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-12th/2023/physics-8078-2023/1043297",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-hindi-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/QXg6ysbVOHn9aL2RKJgU",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2022/hindi-a-j107033-2022/966084",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/A55GHvx8xZUCdzzkakmQ",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2022/maths-j107036-2022/966088",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-science-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/YJKOuV1uQkzYuoHMvzm7",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2022/science-theory-j107035-2022/966087",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-social-science-2022.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aN56PY2O888E5FO3CyV0",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2022/social-science-j107032-2022/966086",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/AIOUdv4cY0Aba1jFKV6X",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2019/mathematics-2003210-2019/966083",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-science-2019.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/dYHLKpFcfY41ZFN5TSkU",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2019/science-2003110-2019/966082",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-english-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/H8Q28mJ0iDysfStG9SXd",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2017/english-paper-2017/454220",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-hindi-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/aTDSBBcy8UF0VeUbhNIw",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2017/hindi-paper-2017/454219",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2017.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/H6UHX4AQrzyMnPmQEild",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2017/mathematics-paper-2017/454221",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-english-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/wiugvr9ruhtgXTWV7fa6",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2016/english-paper-2016/454225",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-hindi-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/T1uZgzRarca6oaEtrvVK",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2016/hindi-paper-2016/454224",
+  "clean": true
+ },
+ {
+  "tag": "pyq-jac-10",
+  "name": "pyq-jac-10-maths-2016.pdf",
+  "src": "https://www.selfstudys.com/sitepdfs/eJT9fIzILbA6VFudDGwp",
+  "referer": "https://www.selfstudys.com/books/jharkhand/state-books/class-10th/2016/mathematics-paper-2016/454226",
   "clean": true
  }
 ]
