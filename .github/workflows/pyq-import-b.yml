@@ -1,0 +1,74 @@
+name: pyq-import-b
+# Imports state-board PYQ PDFs (BSEB / UP / JAC) as release assets. Reads the list in .github/pyq-import/b.json
+# (tag, name, src, optional pages "a-b" to cut one subject out of a combined official PDF). Skips assets already present.
+on:
+  push:
+    branches: [main]
+    paths: ['.github/pyq-import/b.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pyq-import-b
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Import
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -u
+          command -v qpdf >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq qpdf)
+          curl -fsSL -o list.json "https://raw.githubusercontent.com/$REPO/$SHA/.github/pyq-import/b.json"
+          python3 - <<'PY'
+          import json, os, subprocess, urllib.parse, time, hashlib
+          items = json.load(open('list.json'))
+          repo = os.environ['REPO']
+          def run(*a, check=True):
+              return subprocess.run(list(a), capture_output=True, text=True, check=check)
+          have = {}
+          for tag in sorted({i['tag'] for i in items}):
+              r = run('gh', 'release', 'view', tag, '-R', repo, '--json', 'assets', check=False)
+              if r.returncode != 0:
+                  run('gh', 'release', 'create', tag, '-R', repo, '--title', tag, '--notes', 'Previous year / model papers (official sources) for Eduspark PYQs.')
+                  have[tag] = {}
+              else:
+                  have[tag] = {a['name']: a['size'] for a in json.loads(r.stdout)['assets']}
+          cache = {}
+          ok = fail = skip = 0
+          for it in items:
+              tag, name = it['tag'], it['name']
+              if have.get(tag, {}).get(name, 0) > 1000:
+                  skip += 1; print('SKIP', name); continue
+              src = it['src']
+              u = urllib.parse.quote(src, safe=':/?&=%#()')
+              try:
+                  if u not in cache:
+                      fn = 'src_%d.pdf' % len(cache)
+                      for attempt in range(4):
+                          r = run('curl', '-fsSL', '--retry', '3', '-m', '300', '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36', '-o', fn, u, check=False)
+                          if r.returncode == 0 and open(fn, 'rb').read(5) == b'%PDF-': break
+                          time.sleep(5 * (attempt + 1))
+                      else:
+                          raise RuntimeError('download failed: ' + r.stderr[-300:])
+                      cache[u] = fn
+                  fn = cache[u]
+                  out = name
+                  if it.get('pages'):
+                      run('qpdf', '--empty', '--pages', fn, it['pages'], '--', out)
+                  else:
+                      run('cp', fn, out)
+                  if open(out, 'rb').read(5) != b'%PDF-': raise RuntimeError('not a pdf')
+                  r = run('gh', 'release', 'upload', tag, out, '-R', repo, '--clobber', check=False)
+                  if r.returncode != 0: raise RuntimeError('upload: ' + r.stderr[-300:])
+                  print('OK', name, os.path.getsize(out), hashlib.sha256(open(out, 'rb').read()).hexdigest()[:16]); ok += 1
+                  os.remove(out)
+              except Exception as e:
+                  print('FAIL', name, e); fail += 1
+          print('SUMMARY ok=%d skip=%d fail=%d' % (ok, skip, fail))
+          PY
