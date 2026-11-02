@@ -1,0 +1,398 @@
+[
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/041_Mathematics_Standard.zip",
+  "member": "041_Mathematics_Standard/30-1-1_Mathematics Standard.pdf",
+  "title": "CBSE Class 10 Maths 2025 Question Paper (Set 30/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Math.zip",
+  "member": "Math/041 Mathematics Standard/X_MS_041_Mathematics Standard_30-1-1_2024-25.pdf",
+  "title": "CBSE Class 10 Maths 2025 Marking Scheme (Set 30/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-basic-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/241_Mathematics_Basic.zip",
+  "member": "241_Mathematics_Basic/430-1-1_Mathematics Basic.pdf",
+  "title": "CBSE Class 10 Maths Basic 2025 Question Paper (Set 430/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-maths-basic-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Math.zip",
+  "member": "Math/241 Mathematics Basic/X_241_Mathematics Basic_MS_430_1_1.pdf",
+  "title": "CBSE Class 10 Maths Basic 2025 Marking Scheme (Set 430/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-science-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/086_Science.zip",
+  "member": "086_Science/31-1-1_Science.pdf",
+  "title": "CBSE Class 10 Science 2025 Question Paper (Set 31/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-science-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Science.zip",
+  "member": "Science/086 Science (English Medium)/X_086_31-1-1 to 3 Science_MS.pdf",
+  "title": "CBSE Class 10 Science 2025 Marking Scheme (Set 31/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-social-science-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/087_Social_Science.zip",
+  "member": "087_Social_Science/32-1-1_Social Science.pdf",
+  "title": "CBSE Class 10 Social Science 2025 Question Paper (Set 32/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-social-science-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Social%20Science.zip",
+  "member": "Social Science/087 Social Science (English Medium)/X_087_Social Science_MS 32-1-1 E.pdf",
+  "title": "CBSE Class 10 Social Science 2025 Marking Scheme (Set 32/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-english-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/184_English_Language_and_Literature.zip",
+  "member": "184_English_Language_and_Literature/2-1-1_English Language and Literature.pdf",
+  "title": "CBSE Class 10 English 2025 Question Paper (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-english-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/English.zip",
+  "member": "English/English/184 English (Language And Literature)/X_184_English Language & Litt._MS_2_1_1_.pdf",
+  "title": "CBSE Class 10 English 2025 Marking Scheme (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-a-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/002_Hindi_Course_A.zip",
+  "member": "002_Hindi_Course_A/3-1-1_Hindi Course A.pdf",
+  "title": "CBSE Class 10 Hindi A 2025 Question Paper (Set 3/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-a-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Hindi.zip",
+  "member": "Hindi/002 Hindi Course A/X_002_MS_311_Hindi-A.pdf",
+  "title": "CBSE Class 10 Hindi A 2025 Marking Scheme (Set 3/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-b-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/085_Hindi_Course_B.zip",
+  "member": "085_Hindi_Course_B/4-1-1_Hindi Course B.pdf",
+  "title": "CBSE Class 10 Hindi B 2025 Question Paper (Set 4/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-hindi-b-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/Hindi.zip",
+  "member": "Hindi/085 Hindi Course B/X_085_Hindi Course B_MS_4-1-1 to3.pdf",
+  "title": "CBSE Class 10 Hindi B 2025 Marking Scheme (Set 4/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-sanskrit-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/X/52_Sanskrit.pdf",
+  "member": null,
+  "title": "CBSE Class 10 Sanskrit 2025 Question Paper",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-10",
+  "release_title": "PYQs: CBSE Class 10",
+  "name": "pyq-cbse-10-sanskrit-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/X/X_122_MS_Sanskrit.pdf",
+  "member": null,
+  "title": "CBSE Class 10 Sanskrit 2025 Marking Scheme",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physics-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/PHYSICS.zip",
+  "member": "PHYSICS/55-1-1_Physics.pdf",
+  "title": "CBSE Class 12 Physics 2025 Question Paper (Set 55/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physics-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Physics.zip",
+  "member": "Physics/042 Physics English Medium/XII_042_Physics_MS_55_1_1,2,3.pdf",
+  "title": "CBSE Class 12 Physics 2025 Marking Scheme (Set 55/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-chemistry-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/CHEMISTRY.zip",
+  "member": "CHEMISTRY/56-1-1_Chemistry.pdf",
+  "title": "CBSE Class 12 Chemistry 2025 Question Paper (Set 56/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-chemistry-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Chemistry.zip",
+  "member": "Chemistry/043 Chemistry -English Medium/XII_043_Chemistry_MS_56_1- 1.pdf",
+  "title": "CBSE Class 12 Chemistry 2025 Marking Scheme (Set 56/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-maths-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/MATHEMATICS.zip",
+  "member": "MATHEMATICS/65-1-1_Mathematics.pdf",
+  "title": "CBSE Class 12 Maths 2025 Question Paper (Set 65/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-maths-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Math.zip",
+  "member": "Math/041 Mathematics/XII_MS 041_65-1-1 Mathematics 2024-25_.pdf",
+  "title": "CBSE Class 12 Maths 2025 Marking Scheme (Set 65/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-biology-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/BIOLOGY.zip",
+  "member": "BIOLOGY/57-1-1 BIOLOGY.pdf",
+  "title": "CBSE Class 12 Biology 2025 Question Paper (Set 57/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-biology-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Biology.zip",
+  "member": "Biology/044 Biology- English Medium/XII_044_Biolog_MS 57-1-1.pdf",
+  "title": "CBSE Class 12 Biology 2025 Marking Scheme (Set 57/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-english-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/ENGLISH_CORE.zip",
+  "member": "ENGLISH_CORE/1-1-1_English Core.pdf",
+  "title": "CBSE Class 12 English 2025 Question Paper (Set 1/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-english-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/English.zip",
+  "member": "English/301 English Core/XII_301_English Core_MS_Set_1_1_.pdf",
+  "title": "CBSE Class 12 English 2025 Marking Scheme (Set 1/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-hindi-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/HINDI_CORE.zip",
+  "member": "HINDI_CORE/2-1-1 HINDI CORE.pdf",
+  "title": "CBSE Class 12 Hindi 2025 Question Paper (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-hindi-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Hindi.zip",
+  "member": "Hindi/302 Hindi Core/XII_302_Hindi Core_MS_2-1-1 to 3.pdf",
+  "title": "CBSE Class 12 Hindi 2025 Marking Scheme (Set 2/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-accountancy-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/ACCOUNTANCY.zip",
+  "member": "ACCOUNTANCY/67-1-1_Accountancy.pdf",
+  "title": "CBSE Class 12 Accountancy 2025 Question Paper (Set 67/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-accountancy-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Accountancy_055.zip",
+  "member": "Accountancy_055/XII_055_MS_67_1_1_Accountancy.pdf",
+  "title": "CBSE Class 12 Accountancy 2025 Marking Scheme (Set 67/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-business-studies-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/BUSINESS_STUDIES.zip",
+  "member": "BUSINESS_STUDIES/66-1-1_Business Studies.pdf",
+  "title": "CBSE Class 12 Business Studies 2025 Question Paper (Set 66/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-business-studies-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Business_Studies.zip",
+  "member": "Business_Studies/054  Business Studies -English Medium/XII_054_MS_66-1-1_Business Studies.pdf",
+  "title": "CBSE Class 12 Business Studies 2025 Marking Scheme (Set 66/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-economics-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/ECONOMICS.zip",
+  "member": "ECONOMICS/58-1-1 ECONOMICS.pdf",
+  "title": "CBSE Class 12 Economics 2025 Question Paper (Set 58/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-economics-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Economics.zip",
+  "member": "Economics/030 Economics -English Medium/XII_030_Economics_58-1-1_English.pdf",
+  "title": "CBSE Class 12 Economics 2025 Marking Scheme (Set 58/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-history-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/HISTORY.zip",
+  "member": "HISTORY/61-1-1 (History).pdf",
+  "title": "CBSE Class 12 History 2025 Question Paper (Set 61/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-history-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/History.zip",
+  "member": "History/027 History -English Medium/XII_027_History_MS_61_1_1.pdf",
+  "title": "CBSE Class 12 History 2025 Marking Scheme (Set 61/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-political-science-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/POLITICAL_SCIENCE.zip",
+  "member": "POLITICAL_SCIENCE/59-1-1 POLITICAL SCIENCE.pdf",
+  "title": "CBSE Class 12 Political Science 2025 Question Paper (Set 59/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-political-science-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Political_Science.zip",
+  "member": "Political_Science/028 Political Science-English Medium/XII_028_Political Science_59-1-1.pdf",
+  "title": "CBSE Class 12 Political Science 2025 Marking Scheme (Set 59/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-geography-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/GEOGRAPHY.zip",
+  "member": "GEOGRAPHY/64-1-1_GEOGRAPHY.pdf",
+  "title": "CBSE Class 12 Geography 2025 Question Paper (Set 64/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-geography-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Geography.zip",
+  "member": "Geography/029 Geography English Medium/XII_029_Geographny_MS_64-1-1.pdf",
+  "title": "CBSE Class 12 Geography 2025 Marking Scheme (Set 64/1/1)",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-computer-science-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/91_COMPUTER_SCIENCE.pdf",
+  "member": null,
+  "title": "CBSE Class 12 Computer Science 2025 Question Paper",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-computer-science-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/XII_083_MS_Computer_Science.pdf",
+  "member": null,
+  "title": "CBSE Class 12 Computer Science 2025 Marking Scheme",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physical-education-2025.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/75_Physical%20Education.pdf",
+  "member": null,
+  "title": "CBSE Class 12 Physical Education 2025 Question Paper",
+  "author": "CBSE"
+ },
+ {
+  "tag": "pyq-cbse-12",
+  "release_title": "PYQs: CBSE Class 12",
+  "name": "pyq-cbse-12-physical-education-2025-sol.pdf",
+  "src": "https://www.cbse.gov.in/cbsenew/Marking-Scheme/2025/XII/Physical_Education.zip",
+  "member": "Physical_Education/048_Phsyical Education (English Medium)/XII_048_MS_Physical Education.pdf",
+  "title": "CBSE Class 12 Physical Education 2025 Marking Scheme",
+  "author": "CBSE"
+ }
+]
