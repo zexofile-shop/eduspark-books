@@ -1,5 +1,5 @@
 name: lecture-hls
-run-name: ${{ inputs.id && format('hls {0}', inputs.id) || 'hls job file' }}
+run-name: ${{ inputs.id && format('hls {0} {1} {2}', inputs.id, inputs.name, inputs.parts_prefix) || 'hls job file' }}
 # Locked lecture maker. Gets the MP4 (already on the release, joined from upload parts, or imported from a link),
 # makes 720p / 480p / 360p HLS (m3u8) with AES-128 encrypted pieces, and puts ONLY the HLS on Cloudflare R2 under
 # lectures/<id>/ (the original stays on the GitHub release as the master copy). The key line in each playlist points
@@ -157,7 +157,7 @@ jobs:
           h() { if [ -n "$H" ] && [ "$H" -lt "$1" ]; then echo "$H"; else echo "$1"; fi; }   # never upscale
           # Small files for teaching videos: slow preset, capped bitrate, max 25 fps, 2 s keyframes, 6 s pieces,
           # mono voice audio. A board / screen lecture lands far under the caps.
-          V="-c:v libx264 -preset slow -profile:v main -pix_fmt yuv420p -fpsmax 25 -g 50 -keyint_min 50 -sc_threshold 0"
+          V="-c:v libx264 -preset medium -profile:v main -pix_fmt yuv420p -fpsmax 25 -g 50 -keyint_min 50 -sc_threshold 0"
           A=(); MAP=""
           i=0
           for q in "720p 720 28 750k 1500k 56k" "480p 480 29 420k 840k 48k" "360p 360 30 250k 500k 40k"; do
@@ -197,3 +197,8 @@ jobs:
           $S3 cp out/info.json "s3://$BUCKET/lectures/$LID/info.json" --content-type application/json --cache-control "no-cache" --only-show-errors
           for p in master.m3u8 720p/index.m3u8 info.json; do curl -fsS -o /dev/null -w "%{http_code} $p\n" "$PUB/lectures/$LID/$p"; done
           echo "$PUB/lectures/$LID/master.m3u8" >> "$GITHUB_STEP_SUMMARY"
+      - name: Remove the open MP4 (only the locked copy stays)
+        if: success() && env.KEEP_MASTER != '1'
+        run: |
+          id=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" --jq ".assets[] | select(.name == \"$NAME\") | .id" || true)
+          if [ -n "$id" ]; then gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$id" && echo "removed $NAME from $TAG"; fi
