@@ -1,10 +1,13 @@
 name: lecture-hls
-run-name: ${{ format('hls {0}', inputs.id) }}
+run-name: ${{ inputs.id && format('hls {0}', inputs.id) || 'hls job file' }}
 # Locked lecture maker. Gets the MP4 (already on the release, joined from upload parts, or imported from a link),
 # makes 720p / 480p / 360p HLS (m3u8) with AES-128 encrypted pieces, and puts ONLY the HLS on Cloudflare R2 under
 # lectures/<id>/ (the original stays on the GitHub release as the master copy). The key line in each playlist points
 # at the Eduspark server, which hands the key only to a logged-in app session.
 on:
+  push:
+    branches: [main]
+    paths: ['hls-jobs/*.json']
   workflow_dispatch:
     inputs:
       tag:
@@ -39,22 +42,14 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: hls-${{ inputs.id }}
+  group: hls-${{ inputs.id || github.sha }}
   cancel-in-progress: false
 jobs:
   copies:
     runs-on: ubuntu-latest
     timeout-minutes: 340
     env:
-      TAG: ${{ inputs.tag }}
-      NAME: ${{ inputs.name }}
-      PARTS_TAG: ${{ inputs.parts_tag }}
-      PREFIX: ${{ inputs.parts_prefix }}
-      COUNT: ${{ inputs.parts_count }}
-      SIZE: ${{ inputs.size }}
-      SOURCE_URL: ${{ inputs.source_url }}
       GH_TOKEN: ${{ github.token }}
-      LID: ${{ inputs.id }}
       AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: auto
@@ -64,6 +59,34 @@ jobs:
       KEY_URL: https://eduspark-api.vercel.app/api/lecture/key
       PUB: https://pub-10df8dcbea28417faa1136efd9fa3c26.r2.dev
     steps:
+      - uses: actions/checkout@v4
+        if: github.event_name == 'push'
+        with:
+          fetch-depth: 2
+      - name: Resolve job
+        env:
+          I_TAG: ${{ inputs.tag }}
+          I_NAME: ${{ inputs.name }}
+          I_PARTS_TAG: ${{ inputs.parts_tag }}
+          I_PREFIX: ${{ inputs.parts_prefix }}
+          I_COUNT: ${{ inputs.parts_count }}
+          I_SIZE: ${{ inputs.size }}
+          I_SOURCE_URL: ${{ inputs.source_url }}
+          I_ID: ${{ inputs.id }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            f=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'hls-jobs/*.json' | head -1)
+            [ -n "$f" ] || { echo "no job file"; exit 1; }
+            python3 - "$f" <<'PY' >> "$GITHUB_ENV"
+          import json, sys
+          j = json.load(open(sys.argv[1]))
+          for k, e in (("tag", "TAG"), ("name", "NAME"), ("parts_tag", "PARTS_TAG"), ("parts_prefix", "PREFIX"), ("parts_count", "COUNT"), ("size", "SIZE"), ("source_url", "SOURCE_URL"), ("id", "LID")):
+              v = str(j.get(k, "") or "").replace("\n", "")
+              print(f"{e}={v}")
+          PY
+          else
+            { echo "TAG=$I_TAG"; echo "NAME=$I_NAME"; echo "PARTS_TAG=$I_PARTS_TAG"; echo "PREFIX=$I_PREFIX"; echo "COUNT=$I_COUNT"; echo "SIZE=$I_SIZE"; echo "SOURCE_URL=$I_SOURCE_URL"; echo "LID=$I_ID"; } >> "$GITHUB_ENV"
+          fi
       - name: Check inputs
         run: |
           [[ "$NAME" =~ ^[A-Za-z0-9._-]{1,140}\.mp4$ ]] || { echo "bad name"; exit 1; }
@@ -76,7 +99,7 @@ jobs:
             [[ "$COUNT" =~ ^[0-9]{1,4}$ && "$SIZE" =~ ^[0-9]{1,12}$ ]] || { echo "bad count/size"; exit 1; }
           fi
       - name: Join parts
-        if: inputs.parts_count != ''
+        if: env.COUNT != ''
         run: |
           mkdir -p parts src
           gh release download "$PARTS_TAG" -R "$GITHUB_REPOSITORY" -p "$PREFIX.*.part" -D parts
@@ -87,7 +110,7 @@ jobs:
           gh release upload "$TAG" "src/$NAME" -R "$GITHUB_REPOSITORY"
           echo "https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$NAME" >> "$GITHUB_STEP_SUMMARY"
       - name: Delete parts (and any older than a day)
-        if: always() && inputs.parts_count != ''
+        if: always() && env.COUNT != ''
         run: |
           cutoff=$(date -u -d '1 day ago' +%Y-%m-%dT%H:%M:%SZ)
           gh api "repos/$GITHUB_REPOSITORY/releases/tags/$PARTS_TAG" --jq ".assets[] | select((.name | startswith(\"$PREFIX.\")) or (.created_at < \"$cutoff\")) | .id" | while read -r id; do
@@ -95,7 +118,7 @@ jobs:
             gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$id" && echo "deleted $id"
           done
       - name: Import from link
-        if: inputs.source_url != ''
+        if: env.SOURCE_URL != ''
         run: |
           mkdir -p src
           if gh release view "$TAG" -R "$GITHUB_REPOSITORY" --json assets -q '.assets[].name' | grep -qx "$NAME"; then echo "already on the release"; gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p "$NAME" -D src; exit 0; fi
@@ -109,7 +132,7 @@ jobs:
           command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           command -v aws >/dev/null || pip install -q awscli
       - name: Get the MP4
-        if: inputs.parts_count == '' && inputs.source_url == ''
+        if: env.COUNT == '' && env.SOURCE_URL == ''
         run: |
           mkdir -p src
           gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p "$NAME" -D src
