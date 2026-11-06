@@ -1,0 +1,176 @@
+name: lecture-hls
+run-name: ${{ format('hls {0}', inputs.id) }}
+# Locked lecture maker. Gets the MP4 (already on the release, joined from upload parts, or imported from a link),
+# makes 720p / 480p / 360p HLS (m3u8) with AES-128 encrypted pieces, and puts ONLY the HLS on Cloudflare R2 under
+# lectures/<id>/ (the original stays on the GitHub release as the master copy). The key line in each playlist points
+# at the Eduspark server, which hands the key only to a logged-in app session.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag that holds the video
+        required: true
+      name:
+        description: Asset name of the file (.mp4 or .pdf)
+        required: true
+      parts_tag:
+        description: Release that holds the parts (join mode)
+        required: false
+        default: ''
+      parts_prefix:
+        description: Part name prefix (join mode)
+        required: false
+        default: ''
+      parts_count:
+        description: Number of parts (join mode)
+        required: false
+        default: ''
+      size:
+        description: Expected size in bytes of the joined file (join mode)
+        required: false
+        default: ''
+      source_url:
+        description: Import mode, a direct https link to an MP4 to copy onto the release
+        required: false
+        default: ''
+      id:
+        description: Lecture id (folder on R2), letters, digits, - and _
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: hls-${{ inputs.id }}
+  cancel-in-progress: false
+jobs:
+  copies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      TAG: ${{ inputs.tag }}
+      NAME: ${{ inputs.name }}
+      PARTS_TAG: ${{ inputs.parts_tag }}
+      PREFIX: ${{ inputs.parts_prefix }}
+      COUNT: ${{ inputs.parts_count }}
+      SIZE: ${{ inputs.size }}
+      SOURCE_URL: ${{ inputs.source_url }}
+      GH_TOKEN: ${{ github.token }}
+      LID: ${{ inputs.id }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      LMK: ${{ secrets.LECTURE_MASTER_KEY }}
+      BUCKET: eduspark-lectures
+      KEY_URL: https://eduspark-api.vercel.app/api/lecture/key
+      PUB: https://pub-10df8dcbea28417faa1136efd9fa3c26.r2.dev
+    steps:
+      - name: Check inputs
+        run: |
+          [[ "$NAME" =~ ^[A-Za-z0-9._-]{1,140}\.mp4$ ]] || { echo "bad name"; exit 1; }
+          [[ "$LID" =~ ^[A-Za-z0-9_-]{1,80}$ ]] || { echo "bad id"; exit 1; }
+          [[ "$TAG" =~ ^[A-Za-z0-9._-]{1,100}$ ]] || { echo "bad tag"; exit 1; }
+          if [ -n "$SOURCE_URL" ]; then [[ "$SOURCE_URL" =~ ^https://[^[:space:]]+$ ]] || { echo "bad source url"; exit 1; }; fi
+          if [ -n "$COUNT" ]; then
+            [[ "$PARTS_TAG" =~ ^[A-Za-z0-9._-]{1,100}$ ]] || { echo "bad parts tag"; exit 1; }
+            [[ "$PREFIX" =~ ^up-[a-f0-9]{6,40}$ ]] || { echo "bad prefix"; exit 1; }
+            [[ "$COUNT" =~ ^[0-9]{1,4}$ && "$SIZE" =~ ^[0-9]{1,12}$ ]] || { echo "bad count/size"; exit 1; }
+          fi
+      - name: Join parts
+        if: inputs.parts_count != ''
+        run: |
+          mkdir -p parts src
+          gh release download "$PARTS_TAG" -R "$GITHUB_REPOSITORY" -p "$PREFIX.*.part" -D parts
+          n=$(ls parts | wc -l); echo "parts: $n of $COUNT"; [ "$n" = "$COUNT" ] || { echo "missing parts"; exit 1; }
+          ls parts | sort | sed 's#^#parts/#' | xargs cat > "src/$NAME"
+          got=$(stat -c %s "src/$NAME"); echo "joined $got bytes, expected $SIZE"; [ "$got" = "$SIZE" ] || exit 1
+          rm -rf parts
+          gh release upload "$TAG" "src/$NAME" -R "$GITHUB_REPOSITORY"
+          echo "https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$NAME" >> "$GITHUB_STEP_SUMMARY"
+      - name: Delete parts (and any older than a day)
+        if: always() && inputs.parts_count != ''
+        run: |
+          cutoff=$(date -u -d '1 day ago' +%Y-%m-%dT%H:%M:%SZ)
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$PARTS_TAG" --jq ".assets[] | select((.name | startswith(\"$PREFIX.\")) or (.created_at < \"$cutoff\")) | .id" | while read -r id; do
+            [ "${{ job.status }}" = "success" ] || [[ "$(gh api repos/$GITHUB_REPOSITORY/releases/assets/$id --jq .name)" != "$PREFIX."* ]] || continue
+            gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$id" && echo "deleted $id"
+          done
+      - name: Import from link
+        if: inputs.source_url != ''
+        run: |
+          mkdir -p src
+          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" --json assets -q '.assets[].name' | grep -qx "$NAME"; then echo "already on the release"; gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p "$NAME" -D src; exit 0; fi
+          curl -fL --retry 3 --retry-delay 5 --max-filesize 2130706432 -o "src/$NAME" "$SOURCE_URL"
+          got=$(stat -c %s "src/$NAME"); echo "downloaded $got bytes"
+          [ "$(head -c 8 "src/$NAME" | tail -c 4)" = "ftyp" ] || { echo "not an MP4 file"; exit 1; }
+          gh release upload "$TAG" "src/$NAME" -R "$GITHUB_REPOSITORY"
+          echo "https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG/$NAME" >> "$GITHUB_STEP_SUMMARY"
+      - name: Tools
+        run: |
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          command -v aws >/dev/null || pip install -q awscli
+      - name: Get the MP4
+        if: inputs.parts_count == '' && inputs.source_url == ''
+        run: |
+          mkdir -p src
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p "$NAME" -D src
+      - name: Probe
+        run: |
+          ls -l src
+          ffprobe -v error -show_entries stream=codec_type,width,height,r_frame_rate,bit_rate:format=duration,size -of compact "src/$NAME"
+      - name: Make locked HLS (720p, 480p, 360p)
+        run: |
+          set -euo pipefail
+          IN="src/$NAME"; OUT=out; rm -rf "$OUT"; mkdir -p "$OUT"
+          # per-lecture key = first 16 bytes of HMAC-SHA256(master, "hls1|<id>") (same as the server)
+          python3 - <<'PY'
+          import base64, hmac, hashlib, os
+          m = base64.b64decode(os.environ["LMK"]); assert len(m) == 32
+          open("lec.key", "wb").write(hmac.new(m, ("hls1|" + os.environ["LID"]).encode(), hashlib.sha256).digest()[:16])
+          PY
+          IV=$(openssl rand -hex 16)
+          printf '%s?id=%s\n%s\n%s\n' "$KEY_URL" "$LID" "$PWD/lec.key" "$IV" > keyinfo
+          H=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of csv=p=0 "$IN" | head -1)
+          AUDIO=$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$IN" | head -1 || true)
+          h() { if [ -n "$H" ] && [ "$H" -lt "$1" ]; then echo "$H"; else echo "$1"; fi; }   # never upscale
+          # Small files for teaching videos: slow preset, capped bitrate, max 25 fps, 2 s keyframes, 6 s pieces,
+          # mono voice audio. A board / screen lecture lands far under the caps.
+          V="-c:v libx264 -preset slow -profile:v main -pix_fmt yuv420p -fpsmax 25 -g 50 -keyint_min 50 -sc_threshold 0"
+          A=(); MAP=""
+          i=0
+          for q in "720p 720 28 750k 1500k 56k" "480p 480 29 420k 840k 48k" "360p 360 30 250k 500k 40k"; do
+            set -- $q
+            A+=(-map "[v$1]" -crf:v:$i $3 -maxrate:v:$i $4 -bufsize:v:$i $5)
+            if [ -n "$AUDIO" ]; then A+=(-map 0:a:0 -c:a:$i aac -b:a:$i $6 -ac:a:$i 1 -ar:a:$i 44100); MAP+="v:$i,a:$i,name:$1 "; else MAP+="v:$i,name:$1 "; fi
+            i=$((i+1))
+          done
+          FC="[0:v]split=3[s1][s2][s3];[s1]scale=-2:$(h 720):flags=lanczos[v720p];[s2]scale=-2:$(h 480):flags=lanczos[v480p];[s3]scale=-2:$(h 360):flags=lanczos[v360p]"
+          ffmpeg -hide_banner -loglevel warning -stats -y -i "$IN" -filter_complex "$FC" $V "${A[@]}" \
+            -f hls -hls_time 6 -hls_playlist_type vod -hls_flags independent_segments -hls_segment_type mpegts \
+            -hls_key_info_file keyinfo -hls_segment_filename "$OUT/%v/s%04d.ts" \
+            -master_pl_name master.m3u8 -var_stream_map "${MAP% }" "$OUT/%v/index.m3u8"
+          rm -f lec.key keyinfo
+          grep -q 'EXT-X-KEY:METHOD=AES-128' "$OUT/720p/index.m3u8" || { echo "not encrypted"; exit 1; }
+          DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$IN" | cut -d. -f1)
+          SRC=$(stat -c %s "$IN")
+          python3 - "$OUT" "$DUR" "$SRC" <<'PY'
+          import json, os, sys, time
+          out, dur, src = sys.argv[1], int(sys.argv[2] or 0), int(sys.argv[3])
+          q = {}
+          for v in ("720p", "480p", "360p"):
+              d = os.path.join(out, v)
+              q[v] = sum(os.path.getsize(os.path.join(d, f)) for f in os.listdir(d))
+          json.dump({"id": os.environ["LID"], "source": os.environ["NAME"], "durationSec": dur, "sourceBytes": src,
+                     "bytes": q, "totalBytes": sum(q.values()), "locked": True, "made": int(time.time())}, open(os.path.join(out, "info.json"), "w"))
+          print(open(os.path.join(out, "info.json")).read())
+          PY
+          du -sh "$OUT"/*
+      - name: Put on R2 (only the HLS)
+        run: |
+          set -euo pipefail
+          S3="aws s3 --endpoint-url $R2_ENDPOINT"
+          $S3 rm "s3://$BUCKET/lectures/$LID/" --recursive --only-show-errors || true
+          $S3 cp out "s3://$BUCKET/lectures/$LID/" --recursive --exclude "*" --include "*.ts" --content-type video/mp2t --cache-control "public, max-age=31536000, immutable" --only-show-errors
+          $S3 cp out "s3://$BUCKET/lectures/$LID/" --recursive --exclude "*" --include "*.m3u8" --content-type application/vnd.apple.mpegurl --cache-control "public, max-age=300" --only-show-errors
+          $S3 cp out/info.json "s3://$BUCKET/lectures/$LID/info.json" --content-type application/json --cache-control "no-cache" --only-show-errors
+          for p in master.m3u8 720p/index.m3u8 info.json; do curl -fsS -o /dev/null -w "%{http_code} $p\n" "$PUB/lectures/$LID/$p"; done
+          echo "$PUB/lectures/$LID/master.m3u8" >> "$GITHUB_STEP_SUMMARY"
