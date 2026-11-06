@@ -1,0 +1,44 @@
+name: import-locked-books
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and attach
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SRC: https://pub-a9119bb4377e44eea9c2ff7a6e81f260.r2.dev/
+        run: |
+          mkdir enc && cd enc
+          cat > list.txt <<'EOF'
+          Abhyas-Model-Paper-1-Neev-English-Class12.espdf
+          Abhyas-Model-Paper-2-Pragati-English-Class12.espdf
+          Abhyas-Model-Paper-3-Shikhar-English-Class12.espdf
+          Biology-One-Shot-Khatam-in-199-Pages-Class12.espdf
+          Chemistry-Ch1-Chemical-Reactions-Notes-Class10.espdf
+          Chemistry-One-Shot-Khatam-in-199-Pages-Class12.espdf
+          English-100-by-100-Nitesh-Bhaiya-BSEB-Class12.espdf
+          English-15-Sample-Papers-CBSE-Class10.espdf
+          Hindi-15-Sample-Papers-CBSE-Class10.espdf
+          Maths-Khatam-in-60-Days-Astra-Series-Class10.espdf
+          Maths-One-Shot-Handwritten-Notes-Class10.espdf
+          Maths-One-Shot-Khatam-in-199-Pages-Class12.espdf
+          Physics-One-Shot-Khatam-in-199-Pages-Class12.espdf
+          SST-Khatam-in-60-Days-Astra-Series-Class10.espdf
+          SST-One-Shot-Handwritten-Notes-Class10.espdf
+          Science-15-Sample-Papers-CBSE-Class10.espdf
+          Science-Khatam-in-60-Days-Astra-Series-Class10-Part-1-of-3.espdf
+          Science-Khatam-in-60-Days-Astra-Series-Class10-Part-2-of-3.espdf
+          Science-Khatam-in-60-Days-Astra-Series-Class10-Part-3-of-3.espdf
+          Science-Khatam-in-60-Days-Class10-Full-Book.espdf
+          Science-One-Shot-Khatam-in-99-Pages-Class10.espdf
+          EOF
+          while read -r f; do
+            f="$(echo "$f" | xargs)"; [ -z "$f" ] && continue
+            curl -fsSL --retry 3 -o "$f" "$SRC$f"
+          done < list.txt
+          ls -la
+          gh release upload books-enc-v1 *.espdf --clobber -R "$GITHUB_REPOSITORY"
